@@ -6,9 +6,18 @@ Performance                     |★★★                          |★★     
 Source Access                   |0                               |1                               |1                               |1                               |1                               |
 Editor                          |★★★★                         |★★★                          |★                              |★★                             |★★                            |
 Permissive                      |0                               |1                               |1                               |1                               |1:pay what you want             |
-Documentation                   |★★★★                         |★★★                          |★                              |★                               |★★★                          |This is an arbitrary but somewhat educated guess.
 3rd Party Assets                |★★★★★                       |★★★                          |★                               |★                              |★                              |SteamWorks
 Production-ready                |1                               |0.75:3.0 not quite              |0.75:experienced devs           |0.75:experienced devs           |0.25:not yet                    |
+
+Documentation                   |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
+-|-|-                           |-|-|-|-
+API Docs                        |1                               |1                               |1                               |0                               |1                               |Official
+API Snippets                    |1                               |0                               |0                               |0                               |0                               |Official
+Manuals                         |1                               |0                               |0.4:Old wiki, forums            |0                               |0                               |Official
+Tutorials                       |1                               |0                               |0                               |0                               |0                               |Official
+Video Tutorials                 |1                               |0                               |0                               |0.4:A few                       |0                               |Official
+Community Docs/Tuts             |1                               |0.5:A few                       |0                               |0                               |0                               |
+Commercial Material             |1                               |0                               |0                               |0                               |0                               |Books. paid courses, etc
 
 Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
 -|-|-|-|-|-|-
@@ -60,7 +69,7 @@ MSAA                            |1                               |0             
 TXAA                            |0                               |0                               |0                               |0                               |0                               |
 VR Support                      |1                               |0                               |0                               |0                               |0                               |
 GPU Profiling                   |0                               |0                               |0                               |0                               |1                               |
-Debugging                       |1:with RenderDoc support        |0                               |0                               |1                               |1                               |
+Frame Debugging                 |1                               |0                               |0                               |0                               |0                               |
 Debug Drawing                   |1                               |1                               |1                               |1                               |1                               |Remove this?
 Occlusion Culling               |1                               |                                |1                               |1                               |0                               |
 Particles                       |1                               |1                               |1                               |1                               |1                               |Remove this?
@@ -81,7 +90,7 @@ Line/trail renderer             |1                               |0             
 Spotlight texture/cookie        |                                |                                |                                |                                |                                |add note for ies support
 Point light texture             |                                |                                |                                |                                |                                |
 3D space text                   |                                |                                |                                |                                |                                |
-SDF Text Rendering              |                                |                                |                                |                                |                                |
+SDF Text Rendering              |1:TextMeshPro                   |                                |1                               |                                |                                |
 Static batching                 |1                               |                                |                                |                                |                                |
 
 Rendering - Post processing     |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
