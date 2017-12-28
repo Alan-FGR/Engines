@@ -1,7 +1,7 @@
 ﻿
 
 General Info                    |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Scripting                       |1:C# / UnityScript              |1:C# / C++ / GDScript           |0.75:Lua / Angel / C++          |0.75:Lua / C# (WIP) / C++       |1:C# / C++                      |Check UrhoSharp and Atomic for extra Urho bindings.
 Platforms                       |1:Win / Mac / Lin / iOS / And / Web        |1:Win / Mac / Lin / iOS / And      |1:Win / Mac / Lin / iOS / And / Web / Rpi      |0.8:Win    |0.9:Win / Lin           |Consoles Not included because of legal limitations for opensource projects.
 Performance                     |★★★                          |★★                             |★★★★                         |★★★★★                       |★★★★★                      |This is an arbitrary but somewhat educated guess.
@@ -13,7 +13,7 @@ Documentation                   |★★★★                         |★★★
 Production-ready                |1                               |0.75:3.0 not quite              |0.75:experienced devs           |0.75:experienced devs           |0.25:not yet                    |
 
 Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Terrain System                  |1                               |0:WIP                           |1                               |1                               |1                               |
 Geomipmapping                   |1                               |                                |1                               |1                               |1                               |
 Foliage system                  |1                               |0                               |0                               |1                               |0                               |
@@ -23,12 +23,12 @@ Terrain splines                 |0                               |0             
 Voxel-based (/alternatively)    |0                               |0                               |0                               |0                               |0                               |
 
 Scripting                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Octree Queries                  |0                               |                                |1                               |0                               |1                               |
 Profiling                       |1                               |0                               |0                               |1                               |0                               |
 
 3D Physics                      |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Engine                          |0.8:PhysX (very limited)        |0.8:Own/Bullet                  |0.8:Bullet                      |1:PhysX / Bullet(WIP)           |1:PhysX                         |PhysX is objectively the best physics engine to date both in sim quality and performance (check PEEL), but it's proprietary. Unity is very limited in the sense that you can't access most of the API and a ton of stuff is neglected for example articulations and origin shifting.
 Speculative CD                  |1                               |0/0(WIP)                        |1                               |1                               |1                               |
 Multi-threaded                  |0?                              |0                               |0                               |1                               |1                               |
@@ -37,7 +37,7 @@ Cloth                           |1                               |              
 Particle collision              |1                               |                                |                                |                                |                                |
 
 APIs                            |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Minimum GL                      |v2.0:1                          |v3.0:0.8                        |v2.1:1                          |v2.0:1                          |v4.4:0.5                        |
 Minimum DX                      |v10/11:1                        |0                               |v9.0c:1                         |v9.0c:1                         |v11:0.9                         |
 Vulkan Support                  |1                               |0                               |0                               |0:uses bgfx                     |1                               |
@@ -45,7 +45,7 @@ DX12 Support                    |1                               |0             
 Shader Language                 |Cg / HLSL:1                     |GLSL subset:1                   |GLSL+HLSL:1                     |GLSL-based:1                    |HLSL-based:1                    |Banshee supports subroutines in either GLSL or HLSL
 
 Rendering                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Texture Arrays                  |1:No pipeline                   |0                               |1:XML                           |1:No pipeline                   |0                               |
 Runtime GI - Precomputed        |1 (Enlighten(SH)/own)           |1 - VXGI                        |0                               |0                               |0                               |
 PBR                             |1                               |1                               |1                               |1                               |1                               |
@@ -87,7 +87,7 @@ SDF Text Rendering              |                                |              
 Static batching                 |1                               |                                |                                |                                |                                |
 
 Rendering - Post processing     |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Depth of Field                  |1                               |1                               |0                               |1                               |                                |
 Tonemapping                     |1                               |1                               |0                               |1                               |1                               |
 Bloom                           |1                               |1                               |0                               |1                               |                                |
@@ -96,7 +96,7 @@ SSAO                            |1                               |1             
 FXAA                            |1                               |1                               |                                |1                               |1                               |
 
 2D                              |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 2D support                      |1                               |1                               |1                               |0                               |0:Roadmap                       |
 Sprites                         |1                               |1                               |1                               |0                               |0                               |
 Sprite packing                  |1                               |                                |                                |                                |                                |
@@ -108,7 +108,7 @@ Pixel Units                     |0                               |1             
 2D Skeletal Anim                |1                               |1                               |0                               |0                               |0                               |
 
 Animation                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 GPU Skinning                    |1                               |                                |1                               |1                               |                                |
 IK                              |0:only humanoid                 |0                               |1                               |1                               |1                               |
 Huma0id-aware                   |1                               |0                               |0                               |0                               |0                               |
@@ -124,38 +124,38 @@ Root Bone Movement              |1                               |0             
 Blend Trees                     |1                               |1                               |0                               |1                               |0                               |
 
 Input                           |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 GamePad                         |1                               |1                               |1                               |1                               |1                               |
 HL Abstraction                  |1 (terrible)                    |0                               |0                               |0                               |1                               |
 
 Audio                           |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Streaming                       |1                               |0                               |0                               |0                               |1                               |
 Effects                         |                                |                                |                                |                                |                                |
 
 Audio - Effects                 |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Echo                            |                                |                                |0                               |1                               |1                               |
 Doppler                         |                                |                                |0                               |                                |1                               |
 Reverb                          |1                               |                                |                                |                                |1                               |
 Space-aware reverb              |                                |                                |0                               |                                |0                               |
 
 Network                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Scene Replication               |1                               |1                               |1                               |0                               |0                               |
 RPC                             |                                |                                |                                |                                |                                |
 HTTP requests                   |                                |                                |1                               |                                |                                |irrelevant?
 Voice over network              |0                               |0                               |0                               |0                               |0                               |
 
 AI                              |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Pathfinding                     |1:Recast/Detour                 |1:Own                           |1:Recast/Detour                 |1:Recast/Detour                 |0                               |
 Runtime Graph Generation        |1 (WIP)                         |0                               |1                               |1                               |N/A                             |
 State Machine                   |0                               |0                               |0                               |0                               |0                               |
 Crowd Simulation                |                                |0                               |1                               |                                |                                |
 
 Asset Pipeline                  |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 FBX                             |1:AD SDK                        |0.5:Bad support                 |0.5:Bad support                 |0.9:OpenFBX                     |1:AD SDK                        |
 GLTF                            |                                |                                |                                |                                |                                |
 PSD                             |                                |                                |                                |                                |                                |
@@ -164,12 +164,12 @@ Fonts                           |                                |              
 Meshes                          |                                |                                |                                |                                |                                |
 
 UI                              |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 In-Game Restrained              |1                               |1                               |1                               |1 (Turbobadger)                 |1                               |
 In-Game Immediate               |1                               |0                               |0                               |1 (Dear Imgui)                  |0                               |
 
 Editor                          |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Drag and Drop Prefabs           |                                |                                |                                |                                |                                |
 Nested Prefabs                  |                                |                                |                                |                                |                                |
 Customizable Prefab Previews    |0                               |0                               |0                               |1                               |0                               |
@@ -183,7 +183,7 @@ Visual UI editor                |1                               |1             
 IDE integration                 |                                |                                |                                |                                |                                |
 
 Others                          |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--                               |-                               |-                               |-                               |-                               |-                               |-
+-|-|-|-|-|-|-
 Async Loading                   |1                               |0                               |0 (background loading?)         |                                |1                               |Prefabs/Assets - add one for scenes?
 Remote profiling                |                                |                                |                                |                                |                                |
 Usable as lib                   |0                               |0                               |1                               |0                               |0                               |
