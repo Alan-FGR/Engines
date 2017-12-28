@@ -2,9 +2,9 @@
 FEATURE|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
 -|-|-|-|-|-|-
 Scripting|C# / UnityScript|C# / C++ / GDScript|Lua / Angel / C++|Lua / C# / C++|C# / C++|
-Performance|0.6:★★★|0.2:★★|0.8:★★★★|1:★★★★★|1:★★★★★|This is an arbitrary but somewhat educated guess.
+Performance|★★★|★★|★★★★|★★★★★|★★★★★|This is an arbitrary but somewhat educated guess.
 Source Access|0|1|1|1|1|
-Editor|0.8:★★★★|0.6:★★★|0.2:★|0.4:★★|0.4:★★|
+Editor|★★★★|★★★|★|★★|★★|
 Permissive|0|1|1|1|1:pay what you want|
 Platforms|Win / Mac / Lin / iOS / And / Web|Win / Mac / Lin / iOS / And|Win / Mac / Lin / iOS / And / Web / Rpi|Win|Win / Lin|Consoles Not included because of legal limitations for opensource projects.
 Documentation|★★★★|★★★|★|★|★★★|This is an arbitrary but somewhat educated guess.

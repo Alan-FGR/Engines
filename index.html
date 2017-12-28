@@ -64,16 +64,20 @@
 
         /* accepted formats:
         weight
+        stars (★)
         weight:tooltip
         text:weight
         */
 
         function parseEntry(raw) {
             var elements = raw.split(":");
+            console.log("elements", elements);
             if (elements.length == 1) {
                 var element = elements[0];
                 var number = parseFloat(element);
                 if (!number.isNaN) return newEntry(number, glyphFromWeight(number));
+                //parse stars
+                if (element[0] == "★") return newEntry(element.length/5, element);
             }
             else if (elements.length == 2) {
                 var elementA = elements[0];
