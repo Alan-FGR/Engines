@@ -1,3 +1,8 @@
-# Engines
+﻿# Engines
 
-WIP
+accepted formats:
+weight
+stars (★)
+weight:tooltip
+text:weight
+

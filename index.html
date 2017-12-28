@@ -160,7 +160,7 @@
         */
 
         function parseEntry(raw) {
-            var elements = raw.split(":");
+            var elements = raw.trim().split(":");
             //console.log("elements", elements);
             if (elements.length == 1) {
                 var element = elements[0];
