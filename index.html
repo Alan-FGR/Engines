@@ -227,7 +227,7 @@
         $(document).ready(function () {
             $.get("https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md", function (data) {
                 
-                var sections = data.split("\n\n");
+                var sections = data.trim().split("\n\n");
 
 
                 var finalTable = "<table>";

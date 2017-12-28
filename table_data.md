@@ -1,6 +1,4 @@
-﻿
-
-General Info                    |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
+﻿General Info                    |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
 -|-|-|-|-|-|-
 Scripting                       |1:C# / UnityScript              |1:C# / C++ / GDScript           |0.75:Lua / Angel / C++          |0.75:Lua / C# (WIP) / C++       |1:C# / C++                      |Check UrhoSharp and Atomic for extra Urho bindings.
 Platforms                       |1:Win / Mac / Lin / iOS / And / Web        |1:Win / Mac / Lin / iOS / And      |1:Win / Mac / Lin / iOS / And / Web / Rpi      |0.8:Win    |0.9:Win / Lin           |Consoles Not included because of legal limitations for opensource projects.
@@ -187,14 +185,3 @@ Others                          |Unityᶠʳᵉᵉ                       |Godot  
 Async Loading                   |1                               |0                               |0 (background loading?)         |                                |1                               |Prefabs/Assets - add one for scenes?
 Remote profiling                |                                |                                |                                |                                |                                |
 Usable as lib                   |0                               |0                               |1                               |0                               |0                               |
-
-
-
-
-
-
-
-
-
-
-
