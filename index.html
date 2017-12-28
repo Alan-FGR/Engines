@@ -204,7 +204,7 @@
                     //console.log(parsedLines);
                     sum += parsedLines[j].lineEntries[i].weight;
                 }
-                headers[i + 1] += "<sup>" + sum + "</sup>&frasl;<sub>" + parsedLines.length + "</sub>";
+                headers[i + 1] += "<sup>" + sum.toFixed(1) + "</sup>&frasl;<sub>" + parsedLines.length + "</sub>";
                 console.log(headers);
             }
             return headers;
