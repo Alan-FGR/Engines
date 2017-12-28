@@ -14,7 +14,9 @@
             cursor: pointer;
         }
 
-        tr.section_content:nth-child(odd) { background: #fee !important; }
+        tr.section_content:nth-child(odd) {
+            background: #eee !important;
+        }
     </style>
 </head>
 
@@ -45,7 +47,7 @@
         ];
 
         function colorFromWeight(weight) {
-            return colors[weight * (colors.length - 1)];
+            return colors[parseInt(weight * (colors.length - 1))];
         }
 
         function glyphFromWeight(weight) {
@@ -71,21 +73,20 @@
 
         function parseEntry(raw) {
             var elements = raw.split(":");
-            console.log("elements", elements);
+            //console.log("elements", elements);
             if (elements.length == 1) {
                 var element = elements[0];
                 var number = parseFloat(element);
-                if (!number.isNaN) return newEntry(number, glyphFromWeight(number));
-                //parse stars
-                if (element[0] == "★") return newEntry(element.length/5, element);
+                if (!isNaN(number)) return newEntry(number, glyphFromWeight(number));
+                if (element[0] == "★") return newEntry((element.length-1)/4, element);
             }
             else if (elements.length == 2) {
                 var elementA = elements[0];
                 var elementB = elements[1];
                 var numberInA = parseFloat(elementA);
-                if (!numberInA.isNaN) return newEntry(numberInA, glyphFromWeight(numberInA), elementB);
+                if (!isNaN(numberInA)) return newEntry(numberInA, glyphFromWeight(numberInA), elementB);
                 var numberInB = parseFloat(elementB);
-                if (!numberInB.isNaN) return newEntry(numberInB, elementB);
+                if (!isNaN(numberInB)) return newEntry(numberInB, elementB);
             }
             return newEntry(0, "ERROR!!!");
         }
@@ -110,8 +111,8 @@
             for (var i = 0; i < headers.length-2; i++) {
                 var sum = 0;
                 for (var j = 0; j < parsedLines.length; j++) {
-                    console.log("======================="+i+", "+j);
-                    console.log(parsedLines);
+                    //console.log("======================="+i+", "+j);
+                    //console.log(parsedLines);
                     sum += parsedLines[j].lineEntries[i].weight;
                 }
                 headers[i + 1] += " - " + sum;
@@ -142,7 +143,8 @@
 
                 var finalTable = "<table>";
 
-                for (var i = 0; i < sections.length; ++i) {
+                //for (var i = 0; i < sections.length; ++i) {
+                for (var i = 0; i < 1; ++i) {
 
                     var sectionData = parseSection(sections[i]);
 

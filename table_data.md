@@ -1,34 +1,34 @@
 ﻿
-FEATURE|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+FEATURE|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
-Scripting|C# / UnityScript|C# / C++ / GDScript|Lua / Angel / C++|Lua / C# / C++|C# / C++|
+Scripting|1:C# / UnityScript|1:C# / C++ / GDScript|0.75:Lua / Angel / C++|0.75:Lua / C# (WIP) / C++|1:C# / C++|
 Performance|★★★|★★|★★★★|★★★★★|★★★★★|This is an arbitrary but somewhat educated guess.
 Source Access|0|1|1|1|1|
 Editor|★★★★|★★★|★|★★|★★|
 Permissive|0|1|1|1|1:pay what you want|
-Platforms|Win / Mac / Lin / iOS / And / Web|Win / Mac / Lin / iOS / And|Win / Mac / Lin / iOS / And / Web / Rpi|Win|Win / Lin|Consoles Not included because of legal limitations for opensource projects.
+Platforms|1:Win / Mac / Lin / iOS / And / Web|1:Win / Mac / Lin / iOS / And|1:Win / Mac / Lin / iOS / And / Web / Rpi|0.8:Win|0.9:Win / Lin|Consoles Not included because of legal limitations for opensource projects.
 Documentation|★★★★|★★★|★|★|★★★|This is an arbitrary but somewhat educated guess.
 3rd Party Assets|★★★★★|★★★|★|★|★|SteamWorks
-Production-ready|1|3.0 0t quite|1 (experienced dev)|1 (experienced dev)|0t yet|
+Production-ready|1|0.5:3.0 not quite|0.75:(experienced dev)|0.75:(experienced dev)|0:not yet|
 
-General|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+General|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Terrain System|1|0 (WIP)|1|1|1|
 LOD System|1|1 (terrible)|1|1|1|
 
-Scripting|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+Scripting|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Octree Queries|0||1|0|1|
 Profiling|1|0|0|1|0|
 
-3D Physics|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+3D Physics|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Engine|PhysX (very limited)|Own/Bullet|Bullet|PhysX / Bullet(WIP)|PhysX|PhysX is objectively the best physics engine to date both in sim quality and performance (check PEEL), but it's proprietary. Unity is very limited in the sense that you can't access most of the API and a ton of stuff is neglected for example articulations and origin shifting.
 Speculative CD|1|0/0(WIP)|1|1|1|
 Multi-threaded|0?|0|0|1|1|
 Async Scene|0|0|0|0|0|
 
-APIs|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+APIs|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Minimum GL|2.0|3.0|2.1|2.0|4.4|
 Minimum DX|10/11|N/A|9.0c|9.0c|11|
@@ -36,7 +36,7 @@ Vulkan Support|1|0|0|0 (bgfx)|1|
 DX12 Support|1|0|0|1||
 Shader Language|Cg / HLSL|GLSL subset|GLSL+HLSL|GLSL-based|HLSL-based|Banshee supports subroutines in either GLSL or HLSL
 
-Rendering|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+Rendering|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Texture Arrays|1 (0 pipeline)|0|1 (XML)|1 (0 pipeline)|0|
 Runtime GI - Precomputed|1 (Enlighten(SH)/own)|1 - VXGI|0|0|0|
@@ -59,7 +59,7 @@ Occlusion Culling|1||1|1|0|
 Particles|1|1|1|1|1|Remove this?
 Skinned Decals|0|0|1|0|0|
 
-2D|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+2D|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 2D support|1|1|1|0|0 (Roadmap)|
 Sprites|1|1|1|N/A|N/A|
@@ -67,7 +67,7 @@ Physics|Box2D|Own|Box2D|N/A|N/A|
 Audio|1|1|1|0|1|
 Particles|0|1|1|0|0|3D particles are usable for 2D in most cases
 
-Animation|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+Animation|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 GPU Skinning|1||1|1||
 IK|0 - only huma0id|0|1|1|1|
@@ -82,29 +82,29 @@ Anim Events|1|1|1|1|1|
 Anim Curves|1|0|0|0|0|
 Root Bone Movement|1|0|0|1|1|
 
-Input|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+Input|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 GamePad|1|1|1|1|1|
 HL Abstraction|1 (terrible)|0|0|0|1|
 
-3D Audio|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+3D Audio|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Streaming|1|0|0|0|1|
 Effects-|-|-|-|-|-|-
 
-Network|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+Network|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Scene Replication|1|1|1|0|0|
 RPC-|-|-|-|-|-|-
 HTTP requests|||1|||irrelevant?
 
-AI|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+AI|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Pathfinding|Recast/Detour|Own|Recast/Detour|Recast/Detour|0|
 Runtime Graph Generation|1 (WIP)|0|1|1|N/A|
 State Machine|0|0|0|0|0|
 Crowd Simulation||0|1|||
-Asset Pipeline|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+Asset Pipeline|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 FBX|1 (AD SDK)|Bad|Bad|1 (OpenFBX)|1 (AD SDK)|
 GLTF|todo|todo|todo|todo|todo|
 PSD-|-|-|-|-|-|-
@@ -112,13 +112,13 @@ Images-|-|-|-|-|-|-
 Fonts-|-|-|-|-|-|-
 Meshes-|-|-|-|-|-|-
 
-UI|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+UI|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 In-Game Restrained|1|1|1|1 (Turbobadger)|1|
 In-Game Immediate|1|0|0|1 (Dear Imgui)|0|
 
 
-|Unity (Free)|Godot|Urho|Lumix|Banshee|0TES
+|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Universal Features:-|-|-|-|-|-|-
 Visual Shader Editor|0|1|0|0|0|
