@@ -8,12 +8,6 @@
 
 
 
-        
-
-
-
-
-
         table {
             border-collapse: collapse;
         }
@@ -25,20 +19,30 @@
         tr.section_header {
             height: 3em;
             vertical-align: bottom;
-            background: linear-gradient(to bottom, #fff, #ddd);
+            background: linear-gradient(to bottom, #fff, #eee);
             cursor: pointer;
         }
 
         tr.section_header > td:nth-child(even) {
-            background: linear-gradient(to bottom, #fff, #ccc);
+            background: linear-gradient(to bottom, #fff, #ddd);
         }
 
         tr.section_content:nth-child(odd) {
-            background: linear-gradient(to right, #fff, #eee, #fff, #eee, #ddd, #fff);
+            background: linear-gradient(to right, #fff, #fff, #eee, #fff, #fff, #fff, #eee, #fff);
         }
 
         tr.section_content > td > div {
             border: 2px solid transparent;
+            border-radius: 1em;
+            margin: 0.2em 0;
+            text-align: center;
+        }
+
+        tr.section_content > td:nth-child(1) > div {
+            border: 2px solid transparent;
+            border-radius: 1em;
+            margin: 0.2em 0;
+            text-align: right;
         }
 
         div.tooltip {
@@ -67,44 +71,35 @@
             position: relative;
         }
 
+        div.ntooltip > info {
+            border: 2px solid #000;
+            width: 1.2em;
+            display: block;
+            margin: auto;
+            border-radius: 1em;
+            font-weight: bolder;
+        }
+
         .ntooltip .ntooltiptext {
             visibility: hidden;
-            width: 30em;
+            display: inline-block;
             background-color: #000;
             color: #fff;
-            padding: 0.8em 0.4em;
+            padding: 0.8em 0.8em;
             position: absolute;
             z-index: 1;
             top: 1em;
             right: 0;
+            text-align: right;
+            width: 20em;
         }
 
         .ntooltip:hover .ntooltiptext {
             visibility: visible;
         }
 
-    
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
     </style>
 </head>
 
@@ -204,7 +199,9 @@
                     //console.log(parsedLines);
                     sum += parsedLines[j].lineEntries[i].weight;
                 }
-                headers[i + 1] += "<sup>" + sum.toFixed(1) + "</sup>&frasl;<sub>" + parsedLines.length + "</sub>";
+                var fix = sum.toFixed(1);
+                if (fix[fix.length - 1] == "0") fix = fix.slice(0, fix.length - 2);
+                headers[i + 1] += "<sup>" + fix + "</sup>&frasl;<sub>" + parsedLines.length + "</sub>";
                 console.log(headers);
             }
             return headers;
@@ -265,7 +262,7 @@
                         var notes = "";
 
                         if (line.lineNotes != "") {
-                            notes = "HOVER<span class=\"ntooltiptext\">" + line.lineNotes + "</span>";
+                            notes = "<info>i</info><span class=\"ntooltiptext\">" + line.lineNotes + "</span>";
                         }
 
                         finalTable += "<td><div class=\"ntooltip\">" + notes + "</div></td>";
