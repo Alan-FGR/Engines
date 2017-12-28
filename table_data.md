@@ -90,12 +90,12 @@ HL Abstraction|1 (terrible)|0|0|0|1|
 3D Audio|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Streaming|1|0|0|0|1|
-Effects-|-|-|-|-|-|-
+Effects||||||
 
 Network|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 Scene Replication|1|1|1|0|0|
-RPC-|-|-|-|-|-|-
+RPC||||||
 HTTP requests|||1|||irrelevant?
 
 AI|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
@@ -107,10 +107,10 @@ Crowd Simulation||0|1|||
 Asset Pipeline|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 FBX|1 (AD SDK)|Bad|Bad|1 (OpenFBX)|1 (AD SDK)|
 GLTF|todo|todo|todo|todo|todo|
-PSD-|-|-|-|-|-|-
-Images-|-|-|-|-|-|-
-Fonts-|-|-|-|-|-|-
-Meshes-|-|-|-|-|-|-
+PSD||||||
+Images||||||
+Fonts||||||
+Meshes||||||
 
 UI|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
@@ -120,21 +120,20 @@ In-Game Immediate|1|0|0|1 (Dear Imgui)|0|
 
 |Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
-Universal Features:-|-|-|-|-|-|-
 Visual Shader Editor|0|1|0|0|0|
 Pixel Perfect Rendering|0|0|0|0|0|
 Pixel Units|0|1|0|0|0|
 2D Skeletal Anim|1|1|0|0|0|
 Animation Editor|1|1|0|0|0|
 Blend Trees|1|1|0|1|0|
--|-|-|-|-|-|-
+||||||
 ||||1||
 HDR|1|1|1|1|1|
 Geomipmapping|1||1|1|1|
 Max terrain resolution (single)||||Unlimited||
 Tileable Terrains (adjacent awareness)|1||0|0|0|
 Async Loading|1|0|0 (background loading?)||1|Prefabs/Assets - add one for scenes?
--|-|-|-|-|-|-
+||||||
 skybox|1|1|1|1|1|
 height-based fog|1|||1|1|
 fur|0|0|0|1|0|
@@ -144,17 +143,17 @@ mesh decals|0|0|1|0|0|
 deferred decals|0 (WIP?)|1|1|1|0|
 impostors|0|0|0|0|0|
 cascaded shadows|1|1|1|1|1|
--|-|-|-|-|-|-
--|-|-|-|-|-|-
-postfx-|-|-|-|-|-|-
+||||||
+||||||
+postfx||||||
 dof|1|1|0|1||
 tonemapping|1|1|0|1|1|
 bloom|1|1|0|1||
 godrays|||0|1||
 ssao|1|1||1|1|
 fxaa|1|1||1|1|
--|-|-|-|-|-|-
-audiofx-|-|-|-|-|-|-
+||||||
+audiofx||||||
 echo|||0|1|1|
 doppler|||0||1|
 reverb|1||||1|
@@ -167,14 +166,14 @@ voice over network|0|0|0|0|0|
 cloth|1|||||
 particle collision|1|||||
 terrain splines|0|0|0|0|0|roads/rivers/etc
-spotlight texture/cookie-|-|-|-|-|-|-add 0te for ies support
-point light texture-|-|-|-|-|-|-
-3d text - texture quads-|-|-|-|-|-|-
-3d text - sdf-|-|-|-|-|-|-
-texture packing-|-|-|-|-|-|-
-texture atlasing-|-|-|-|-|-|-
-static batching-|-|-|-|-|-|-
-remote profiling (incl mobile)-|-|-|-|-|-|-
+spotlight texture/cookie||||||add 0te for ies support
+point light texture||||||
+3d text - texture quads||||||
+3d text - sdf||||||
+texture packing||||||
+texture atlasing||||||
+static batching||||||
+remote profiling (incl mobile)||||||
 usable as lib|0|0|1|0|0|
 visual scripting?|0|0 (WIP)|0|0|0|
 visual ui editor|1|1|0|0|0|

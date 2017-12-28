@@ -5,18 +5,88 @@
     <title>some thing</title>
 
     <style>
-        table { border-collapse: collapse; }
 
-        td { padding: 0 1em; }
+
+
+
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 0 0.2em;
+        }
 
         .section_header {
             background: #ddd;
             cursor: pointer;
         }
 
-        tr.section_content:nth-child(odd) {
-            background: #eee !important;
+        tr.section_header > td:nth-child(odd) {
+            background: #ccc;
         }
+
+        tr.section_content:nth-child(odd) {
+            background: #eee;
+        }
+
+        tr.section_content > td > div {
+            border: 2px solid transparent;
+        }
+
+        div.tooltip {
+            position: relative;
+            border: 2px dotted black !important;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 10em;
+            background-color: #000;
+            color: #fff;
+            padding: 0.8em 0.4em;
+            position: absolute;
+            z-index: 1;
+            top: 1em;
+            left: 0;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+
+        div.ntooltip {
+            position: relative;
+        }
+
+        .ntooltip .ntooltiptext {
+            visibility: hidden;
+            width: 30em;
+            background-color: #000;
+            color: #fff;
+            padding: 0.8em 0.4em;
+            position: absolute;
+            z-index: 1;
+            top: 1em;
+            right: 0;
+        }
+
+        .ntooltip:hover .ntooltiptext {
+            visibility: visible;
+        }
+
+    
+
+    
+
+    
+
+    
+
+    
+
     </style>
 </head>
 
@@ -88,6 +158,7 @@
                 var numberInB = parseFloat(elementB);
                 if (!isNaN(numberInB)) return newEntry(numberInB, elementB);
             }
+            if (elements[0] == "") return newEntry(0, "NO DATA");
             return newEntry(0, "ERROR!!!");
         }
 
@@ -97,7 +168,7 @@
             var entries = [];
             for (var i = 1; i < rawEntries.length-1; i++) {
                 entries.push(parseEntry(rawEntries[i]));
-                console.log("parsedEntry", parseEntry(rawEntries[i]));
+                //console.log("parsedEntry", parseEntry(rawEntries[i]));
             }
             return {
                 lineHeader: rawEntries[0],
@@ -115,7 +186,7 @@
                     //console.log(parsedLines);
                     sum += parsedLines[j].lineEntries[i].weight;
                 }
-                headers[i + 1] += " - " + sum;
+                headers[i + 1] += "<sup>" + sum + "</sup>&frasl;<sub>" + parsedLines.length + "</sub>";
                 console.log(headers);
             }
             return headers;
@@ -143,8 +214,8 @@
 
                 var finalTable = "<table>";
 
-                //for (var i = 0; i < sections.length; ++i) {
-                for (var i = 0; i < 1; ++i) {
+                for (var i = 0; i < sections.length; ++i) {
+                //for (var i = 0; i < 1; ++i) {
 
                     var sectionData = parseSection(sections[i]);
 
@@ -166,10 +237,20 @@
 
                         for (var l = 0; l < line.lineEntries.length; l++) {
                             var entry = line.lineEntries[l];
-                            finalTable += "<td><div style=\"background-color:#" + colorFromWeight(entry.weight) + "\">" + entry.text + "</div></td>";
+                            var classes = "";
+                            if (entry.tooltip != undefined) classes += "tooltip ";
+                            finalTable += "<td><div class=\""+classes+"\" style=\"background-color:#" + colorFromWeight(entry.weight) + "\">" + entry.text;
+                            if (entry.tooltip != undefined) finalTable += "<span class=\"tooltiptext\">"+entry.tooltip+"</span>";
+                            finalTable += "</div></td>";
                         }
 
-                        finalTable += "<td><div>" + line.lineNotes + "</div></td>";
+                        var notes = "";
+
+                        if (line.lineNotes != "") {
+                            notes = "HOVER<span class=\"ntooltiptext\">" + line.lineNotes + "</span>";
+                        }
+
+                        finalTable += "<td><div class=\"ntooltip\">" + notes + "</div></td>";
                         finalTable += "</tr>";
                     }
 
