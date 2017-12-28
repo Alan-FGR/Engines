@@ -1,100 +1,183 @@
-<html><meta charset="UTF-8">
+﻿<meta charset="UTF-8">
+<html>
 
 <head>
-<style>
-table{
-    border-collapse: collapse;
-}
+    <title>some thing</title>
 
-td{
-    padding: 0 1em;
-}
+    <style>
+        table { border-collapse: collapse; }
 
-.section_header{
-    background: #ddd;
-    cursor: pointer;
-}
+        td { padding: 0 1em; }
 
-tr.section_content:nth-child(odd) {
-    background: #fee!important;
-}
+        .section_header {
+            background: #ddd;
+            cursor: pointer;
+        }
 
-</style>
+        tr.section_content:nth-child(odd) { background: #fee !important; }
+    </style>
 </head>
 
 <body>
 
-<h1>some</h1>
-<p>thing</p>
+    <h1>some</h1>
+    <p>thing</p>
 
-<div id="table_data"></div>
+    <div id="table_data">Loading data... (requires javascript)</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+        var colors = [ //TODO color lerper
+        "f99",
+        "fa9",
+        "fb9",
+        "fc9",
+        "fd9",
+        "fe9",
+        "ff9",
+        "ef9",
+        "df9",
+        "cf9",
+        "bf9",
+        "af9",
+        "9f9"
+        ];
+
+        function colorFromWeight(weight) {
+            return colors[weight * (colors.length - 1)];
+        }
+
+        function glyphFromWeight(weight) {
+            if (weight == 0) return "✗";
+            else if (weight == 1) return "✔";
+            return "⍻";
+        }
+
+        function newEntry(weight, text, tooltip) {
+            return {
+                weight: weight,
+                text: text,
+                tooltip: tooltip
+            };
+        }
+
+        /* accepted formats:
+        weight
+        weight:tooltip
+        text:weight
+        */
+
+        function parseEntry(raw) {
+            var elements = raw.split(":");
+            if (elements.length == 1) {
+                var element = elements[0];
+                var number = parseFloat(element);
+                if (!number.isNaN) return newEntry(number, glyphFromWeight(number));
+            }
+            else if (elements.length == 2) {
+                var elementA = elements[0];
+                var elementB = elements[1];
+                var numberInA = parseFloat(elementA);
+                if (!numberInA.isNaN) return newEntry(numberInA, glyphFromWeight(numberInA), elementB);
+                var numberInB = parseFloat(elementB);
+                if (!numberInB.isNaN) return newEntry(numberInB, elementB);
+            }
+            return newEntry(0, "ERROR!!!");
+        }
+
+        function parseLine(line) {
+            console.log("rawLine", line);
+            var rawEntries = line.split("|");
+            var entries = [];
+            for (var i = 1; i < rawEntries.length-1; i++) {
+                entries.push(parseEntry(rawEntries[i]));
+                console.log("parsedEntry", parseEntry(rawEntries[i]));
+            }
+            return {
+                lineHeader: rawEntries[0],
+                lineNotes: rawEntries[rawEntries.length-1],
+                lineEntries: entries
+            }
+        }
+        
+        function calcSectionHeader(rawHeader, parsedLines) {
+            var headers = rawHeader.split("|");
+            for (var i = 0; i < headers.length-2; i++) {
+                var sum = 0;
+                for (var j = 0; j < parsedLines.length; j++) {
+                    console.log("======================="+i+", "+j);
+                    console.log(parsedLines);
+                    sum += parsedLines[j].lineEntries[i].weight;
+                }
+                headers[i + 1] += " - " + sum;
+                console.log(headers);
+            }
+            return headers;
+        }
+
+        function parseSection(section) {
+            var rawLines = section.trim().split("\n");
+            var lines = [];
+            console.log("rawLines", rawLines);
+            for (var i = 2; i < rawLines.length; i++) {
+                lines.push(parseLine(rawLines[i]));
+            }
+            console.log("parsedLines", lines);
+            return {
+                sectionHeader: calcSectionHeader(rawLines[0], lines),
+                sectionLines: lines
+            }
+        }
+
+        $(document).ready(function () {
+            $.get("https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md", function (data) {
+                
+                var sections = data.split("\n\n");
 
 
+                var finalTable = "<table>";
+
+                for (var i = 0; i < sections.length; ++i) {
+
+                    var sectionData = parseSection(sections[i]);
+
+                    console.log(sectionData);
+                    
+                    finalTable += "<tr class=\"section_header\">";
+
+                    for (var j = 0; j < sectionData.sectionHeader.length; j++) {
+                        finalTable += "<td><div>" + sectionData.sectionHeader[j] + "</div></td>";
+                    }
+
+                    finalTable += "</tr>";
 
 
+                    for (var k = 0; k < sectionData.sectionLines.length; k++) {
+                        finalTable += "<tr class=\"section_content\">";
+                        var line = sectionData.sectionLines[k];
+                        finalTable += "<td><div>" + line.lineHeader + "</div></td>";
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
+                        for (var l = 0; l < line.lineEntries.length; l++) {
+                            var entry = line.lineEntries[l];
+                            finalTable += "<td><div style=\"background-color:#" + colorFromWeight(entry.weight) + "\">" + entry.text + "</div></td>";
+                        }
 
-var cols = [
-"f99",
-"fa9",
-"fb9",
-"fc9",
-"fd9",
-"fe9",
-"ff9",
-"ef9",
-"df9",
-"cf9",
-"bf9",
-"af9",
-"9f9",
-]
+                        finalTable += "<td><div>" + line.lineNotes + "</div></td>";
+                        finalTable += "</tr>";
+                    }
 
-$(document).ready(function(){
-	$.get( "https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md", function( data ) {
-				
-		var sections = data.split("\n\n");
-		
-		var finalTable = "<table>";
-		
-		for (i = 0; i < sections.length; ++i) {
+                };
+//
+                finalTable += "</table>";
+                $("#table_data").html(finalTable);
+            });
+        });
 
-			var entries = sections[i].split("\n");
-		
-			finalTable += "<tr class=\"section_header\">";
-			
-			var header_cells = entries[0].split("|");
-			for (hc = 0; hc < header_cells.length; ++hc) {
-				finalTable += "<td><div>"+header_cells[hc]+"</div></td>";
-			}
-			
-			finalTable += "</tr>";
-			
-			for (j = 2; j < entries.length; ++j) {
-				finalTable += "<tr class=\"section_content\">";
-				
-				var content_cells = entries[j].split("|");
-				for (cc = 0; cc < content_cells.length; ++cc) {
-					var color = cols[j]; //TODO
-					finalTable += "<td><div style=\"background-color:#"+color+"\">"+content_cells[cc]+"</div></td>";
-				}
-				
-				finalTable += "</tr>";
-			}
-			
-		};
-				
-		finalTable += "</table>"
-		$("#table_data").html(finalTable);
-	});
-});
-
-$(document).on('click', ".section_header", function() {
-    $(this).nextUntil('.section_header').find('div').slideToggle(); 
-});
-</script>
+        $(document).on('click', ".section_header", function () {
+            $(this).nextUntil('.section_header').find('div').slideToggle();
+        });
+    </script>
 
 </body>
-</html> 
+</html>
