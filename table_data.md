@@ -4,8 +4,9 @@ Scripting                       |1:C# / UnityScript              |1:C# / C++ / G
 Platform Support                |Superb:1:Win / Mac / Lin / iOS / And / Web  |Very Good:0.9:Win / Mac / Lin / iOS / And / Rpi  |Superb:1:Win / Mac / Lin / iOS / And / Web / Rpi  |Mediocre:0.5:Win  |Mediocre:0.6:Win / Lin  |Consoles Not included because of legal limitations for opensource projects.
 Performance                     |Good:0.6                        |Fair:0.4                        |Very Good:0.8                   |Superb:1                        |Superb:1                        |This is an arbitrary but somewhat educated guess.
 Source Access                   |0                               |1                               |1                               |1                               |1                               |
-Permissive                      |0                               |1                               |1                               |1                               |1:pay what you want             |
-3rd Party Assets                |★★★★★                       |★★★                          |★                               |★                              |★                              |Game Services, Social Media, Billing Services, etc.
+Permissive License              |0                               |1                               |1                               |1                               |1:pay what you want             |
+3rd Party Libraries             |★★★★★                       |★★                            |★                               |★                              |★                              |Game Services, Social Media, Billing Services, etc.
+Asset Store                     |Good:1                          |Mediocre:0.5                    |0                               |0                               |0                               |
 Production-ready                |1                               |0.75:3.0 not quite              |0.75:for experienced devs       |0.75:for experienced devs       |0.25:not yet                    |
 
 Documentation                   |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
