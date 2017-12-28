@@ -1,0 +1,100 @@
+<html><meta charset="UTF-8">
+
+<head>
+<style>
+table{
+    border-collapse: collapse;
+}
+
+td{
+    padding: 0 1em;
+}
+
+.section_header{
+    background: #ddd;
+    cursor: pointer;
+}
+
+tr.section_content:nth-child(odd) {
+    background: #fee!important;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>some</h1>
+<p>thing</p>
+
+<div id="table_data"></div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+var cols = [
+"f99",
+"fa9",
+"fb9",
+"fc9",
+"fd9",
+"fe9",
+"ff9",
+"ef9",
+"df9",
+"cf9",
+"bf9",
+"af9",
+"9f9",
+]
+
+$(document).ready(function(){
+	$.get( "https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md", function( data ) {
+				
+		var sections = data.split("\n\n");
+		
+		var finalTable = "<table>";
+		
+		for (i = 0; i < sections.length; ++i) {
+
+			var entries = sections[i].split("\n");
+		
+			finalTable += "<tr class=\"section_header\">";
+			
+			var header_cells = entries[0].split("|");
+			for (hc = 0; hc < header_cells.length; ++hc) {
+				finalTable += "<td><div>"+header_cells[hc]+"</div></td>";
+			}
+			
+			finalTable += "</tr>";
+			
+			for (j = 2; j < entries.length; ++j) {
+				finalTable += "<tr class=\"section_content\">";
+				
+				var content_cells = entries[j].split("|");
+				for (cc = 0; cc < content_cells.length; ++cc) {
+					var color = cols[j]; //TODO
+					finalTable += "<td><div style=\"background-color:#"+color+"\">"+content_cells[cc]+"</div></td>";
+				}
+				
+				finalTable += "</tr>";
+			}
+			
+		};
+				
+		finalTable += "</table>"
+		$("#table_data").html(finalTable);
+	});
+});
+
+$(document).on('click', ".section_header", function() {
+    $(this).nextUntil('.section_header').find('div').slideToggle(); 
+});
+</script>
+
+</body>
+</html> 
