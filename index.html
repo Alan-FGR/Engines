@@ -8,6 +8,10 @@
 
 
 
+        
+
+
+
 
 
         table {
@@ -18,17 +22,19 @@
             padding: 0 0.2em;
         }
 
-        .section_header {
-            background: #ddd;
+        tr.section_header {
+            height: 3em;
+            vertical-align: bottom;
+            background: linear-gradient(to bottom, #fff, #ddd);
             cursor: pointer;
         }
 
-        tr.section_header > td:nth-child(odd) {
-            background: #ccc;
+        tr.section_header > td:nth-child(even) {
+            background: linear-gradient(to bottom, #fff, #ccc);
         }
 
         tr.section_content:nth-child(odd) {
-            background: #eee;
+            background: linear-gradient(to right, #fff, #eee, #fff, #eee, #ddd, #fff);
         }
 
         tr.section_content > td > div {
@@ -76,6 +82,18 @@
         .ntooltip:hover .ntooltiptext {
             visibility: visible;
         }
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
