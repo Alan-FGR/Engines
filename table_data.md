@@ -1,13 +1,12 @@
 ﻿General Info                    |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
 -|-|-|-|-|-|-
 Scripting                       |1:C# / UnityScript              |1:C# / C++ / GDScript           |0.75:Lua / Angel / C++          |0.75:Lua / C# (WIP) / C++       |1:C# / C++                      |Check UrhoSharp and Atomic for extra Urho bindings.
-Platforms                       |1:Win / Mac / Lin / iOS / And / Web        |1:Win / Mac / Lin / iOS / And      |1:Win / Mac / Lin / iOS / And / Web / Rpi      |0.8:Win    |0.9:Win / Lin           |Consoles Not included because of legal limitations for opensource projects.
-Performance                     |★★★                          |★★                             |★★★★                         |★★★★★                       |★★★★★                      |This is an arbitrary but somewhat educated guess.
+Platforms                       |1:Win/Mac/Lin/iOS/And/Web       |1:Win/Mac/Lin/iOS/And           |1:Win/Mac/Lin/iOS/And/Web/Rpi   |0.8:Win                         |0.9:Win/Lin                     |Consoles Not included because of legal limitations for opensource projects.
+Performance                     |Good:0.6                        |Fair:0.4                        |Very Good:0.8                   |Superb:1                        |Superb:1                        |This is an arbitrary but somewhat educated guess.
 Source Access                   |0                               |1                               |1                               |1                               |1                               |
-Editor                          |★★★★                         |★★★                          |★                              |★★                             |★★                            |
 Permissive                      |0                               |1                               |1                               |1                               |1:pay what you want             |
-3rd Party Assets                |★★★★★                       |★★★                          |★                               |★                              |★                              |SteamWorks
-Production-ready                |1                               |0.75:3.0 not quite              |0.75:experienced devs           |0.75:experienced devs           |0.25:not yet                    |
+3rd Party Assets                |★★★★★                       |★★★                          |★                               |★                              |★                              |Game Services, Social Media, Billing Services, etc.
+Production-ready                |1                               |0.75:3.0 not quite              |0.75:for experienced devs       |0.75:for experienced devs       |0.25:not yet                    |
 
 Documentation                   |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
 -|-|-                           |-|-|-|-
@@ -16,7 +15,7 @@ API Snippets                    |1                               |0             
 Manuals                         |1                               |0                               |0.4:Old wiki, forums            |0                               |0                               |Official
 Tutorials                       |1                               |0                               |0                               |0                               |0                               |Official
 Video Tutorials                 |1                               |0                               |0                               |0.4:A few                       |0                               |Official
-Community Docs/Tuts             |1                               |0.5:A few                       |0                               |0                               |0                               |
+Community Docs/Tuts             |1                               |0.4:A few                       |0                               |0                               |0                               |
 Commercial Material             |1                               |0                               |0                               |0                               |0                               |Books. paid courses, etc
 
 Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
