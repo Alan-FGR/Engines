@@ -1,6 +1,6 @@
 ﻿General Info                    |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
 -|-|-|-|-|-|-
-Scripting                       |1:C# / UnityScript              |1:C# / C++ / GDScript           |0.75:Lua / Angel / C++          |0.75:Lua / C# (WIP) / C++       |1:C# / C++                      |Check UrhoSharp and Atomic for extra Urho bindings.
+Scripting                       |Good:1:C# / UnityScript         |Good:1:C# / C++ / GDScript      |Fair:0.5:Lua / Angel / C++      |Fair:0.75:Lua / C# (WIP) / C++  |Good:1:C# / C++                 |1 if has a popular (top 10) managed language, 0.5 for other managed language. Check UrhoSharp and Atomic for extra Urho bindings.
 Platform Support                |Superb:1:Win / Mac / Lin / iOS / And / Web  |Very Good:0.9:Win / Mac / Lin / iOS / And / Rpi  |Superb:1:Win / Mac / Lin / iOS / And / Web / Rpi  |Mediocre:0.5:Win  |Mediocre:0.6:Win / Lin  |Consoles Not included because of legal limitations for opensource projects.
 Performance                     |Good:0.6                        |Fair:0.4                        |Very Good:0.8                   |Superb:1                        |Superb:1                        |This is an arbitrary but somewhat educated guess.
 Source Access                   |0                               |1                               |1                               |1                               |1                               |
@@ -10,7 +10,7 @@ Asset Store                     |Good:1                          |Mediocre:0.5  
 Production-ready                |1                               |0.75:3.0 not quite              |0.75:for experienced devs       |0.75:for experienced devs       |0.25:not yet                    |
 
 Documentation                   |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
--|-|-                           |-|-|-|-
+-|-|-|-|-|-|-
 API Docs                        |1                               |1                               |1                               |0                               |1                               |Official
 API Snippets                    |1                               |0                               |0                               |0                               |0                               |Official
 Manuals                         |1                               |0                               |0.4:Old wiki, forums            |0                               |0                               |Official
