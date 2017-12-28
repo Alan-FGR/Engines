@@ -7,7 +7,7 @@ Source Access                   |0:Decompiled code on GitHub     |1             
 Permissive License              |0                               |1:MIT                           |1:MIT                           |1:MIT                           |1:Pay what you want             |
 3rd Party Libraries             |★★★★★                       |★★                            |★                               |★                              |★                              |Official support for Game Services, Social Media, Billing Services, etc. Even when there's no official support you can still use most of these libraries in most engines.
 Asset Store                     |Good:1                          |Mediocre:0.5                    |0                               |0                               |0                               |
-Production-ready                |1                               |0.75:3.0 not quite              |0.75:for experienced devs       |0.75:for experienced devs       |0.25:not yet                    |
+Production-ready                |1                               |0.8:3.0 not quite               |0.6:for experienced devs        |0.6:for experienced devs        |0.2:not yet                    |
 
 Documentation                   |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
 -|-|-|-|-|-|-
