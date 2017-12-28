@@ -30,11 +30,11 @@ Async Scene|0|0|0|0|0|
 
 APIs|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
-Minimum GL|2.0|3.0|2.1|2.0|4.4|
-Minimum DX|10/11|N/A|9.0c|9.0c|11|
-Vulkan Support|1|0|0|0 (bgfx)|1|
+Minimum GL|v2.0:1|v3.0:0.8|v2.1:1|v2.0:1|v4.4:0.5|
+Minimum DX|v10/11:1|0|v9.0c:1|v9.0c:1|v11:0.9|
+Vulkan Support|1|0|0|0:uses bgfx|1|
 DX12 Support|1|0|0|1||
-Shader Language|Cg / HLSL|GLSL subset|GLSL+HLSL|GLSL-based|HLSL-based|Banshee supports subroutines in either GLSL or HLSL
+Shader Language|Cg / HLSL:1|GLSL subset:1|GLSL+HLSL:1|GLSL-based:1|HLSL-based:1|Banshee supports subroutines in either GLSL or HLSL
 
 Rendering|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
@@ -62,8 +62,8 @@ Skinned Decals|0|0|1|0|0|
 2D|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
 2D support|1|1|1|0|0 (Roadmap)|
-Sprites|1|1|1|N/A|N/A|
-Physics|Box2D|Own|Box2D|N/A|N/A|
+Sprites|1|1|1|0|0|
+Physics|1:Box2D|1:Own|1:Box2D|0|0|
 Audio|1|1|1|0|1|
 Particles|0|1|1|0|0|3D particles are usable for 2D in most cases
 
@@ -100,13 +100,15 @@ HTTP requests|||1|||irrelevant?
 
 AI|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
 -|-|-|-|-|-|-
-Pathfinding|Recast/Detour|Own|Recast/Detour|Recast/Detour|0|
+Pathfinding|1:Recast/Detour|1:Own|1:Recast/Detour|1:Recast/Detour|0|
 Runtime Graph Generation|1 (WIP)|0|1|1|N/A|
 State Machine|0|0|0|0|0|
 Crowd Simulation||0|1|||
+
 Asset Pipeline|Unityᶠʳᵉᵉ|Godot|Urho|Lumix|Banshee|NOTES
-FBX|1 (AD SDK)|Bad|Bad|1 (OpenFBX)|1 (AD SDK)|
-GLTF|todo|todo|todo|todo|todo|
+-|-|-|-|-|-|-
+FBX|1:AD SDK|0.5:Bad support|0.5:Bad support|0.9:OpenFBX|1:AD SDK|
+GLTF||||||
 PSD||||||
 Images||||||
 Fonts||||||
