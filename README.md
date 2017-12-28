@@ -10,3 +10,4 @@ weight:tooltip
 
 text:weight
 
+text:weight:tooltip

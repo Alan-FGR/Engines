@@ -1,7 +1,7 @@
 ﻿General Info                    |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |NOTES
 -|-|-|-|-|-|-
 Scripting                       |1:C# / UnityScript              |1:C# / C++ / GDScript           |0.75:Lua / Angel / C++          |0.75:Lua / C# (WIP) / C++       |1:C# / C++                      |Check UrhoSharp and Atomic for extra Urho bindings.
-Platforms                       |1:Win/Mac/Lin/iOS/And/Web       |1:Win/Mac/Lin/iOS/And           |1:Win/Mac/Lin/iOS/And/Web/Rpi   |0.8:Win                         |0.9:Win/Lin                     |Consoles Not included because of legal limitations for opensource projects.
+Platform Support                |Superb:1:Win / Mac / Lin / iOS / And / Web  |Very Good:0.9:Win / Mac / Lin / iOS / And / Rpi  |Very Good:0.9:Win / Mac / Lin / iOS / And / Web / Rpi  |Mediocre:0.5:Win  |Mediocre:0.6:Win / Lin  |Consoles Not included because of legal limitations for opensource projects.
 Performance                     |Good:0.6                        |Fair:0.4                        |Very Good:0.8                   |Superb:1                        |Superb:1                        |This is an arbitrary but somewhat educated guess.
 Source Access                   |0                               |1                               |1                               |1                               |1                               |
 Permissive                      |0                               |1                               |1                               |1                               |1:pay what you want             |

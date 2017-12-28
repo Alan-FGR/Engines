@@ -151,14 +151,7 @@
                 tooltip: tooltip
             };
         }
-
-        /* accepted formats:
-        weight
-        stars (★)
-        weight:tooltip
-        text:weight
-        */
-
+        
         function parseEntry(raw) {
             var elements = raw.trim().split(":");
             //console.log("elements", elements);
@@ -175,6 +168,13 @@
                 if (!isNaN(numberInA)) return newEntry(numberInA, glyphFromWeight(numberInA), elementB);
                 var numberInB = parseFloat(elementB);
                 if (!isNaN(numberInB)) return newEntry(numberInB, elementA);
+            }
+            else if (elements.length == 3) {
+                var elementA = elements[0];
+                var elementB = elements[1];
+                var elementC = elements[2];
+                var numberInB = parseFloat(elementB);
+                if (!isNaN(numberInB)) return newEntry(numberInB, elementB, elementC);
             }
             if (elements[0] == "") return newEntry(0, "NO DATA");
             return newEntry(0, "ERROR!!!");
