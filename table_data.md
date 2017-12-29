@@ -36,7 +36,7 @@ Vertex Snapping:17              |1                               |0             
 Visual Shader Editor            |0                               |0                               |0                               |0                               |0                               |
 Visual Scripting                |0                               |0:WIP                           |0                               |0                               |0                               |
 Visual UI editor                |1                               |1                               |0                               |0                               |0                               |
-IDE integration                 |1:VS/MD/XS                      |                                |                                |                                |                                |
+IDE integration                 |1:MSVS/MonoDev/Xamarin/Rider-WIP|                                |                                |                                |                                |
 Project View:18                 |1                               |                                |                                |                                |                                |
 Image Assets Preview:19         |1                               |                                |                                |                                |                                |
 Material Assets Preview:20      |1                               |                                |                                |                                |                                |
@@ -97,7 +97,7 @@ Sprite Editor / Mapper:34       |1                               |              
 Sprite Packer UI:35             |1                               |                                |                                |                                |                                |
 Terrain Editor                  |1                               |                                |                                |                                |                                |
 Foliage Editor                  |0.6:Trees only                  |                                |                                |                                |                                |
-Foliage Painter                 |1                               |                                |                                |                                |                                |
+Foliage Painting                |1                               |                                |                                |                                |                                |
 
 Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-

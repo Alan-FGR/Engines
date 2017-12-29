@@ -22,4 +22,4 @@ line notes format:
 
 line notes AKA feature aka1 AKA feature aka2
 
-akas are 
+akas are listed in the feature name tooltip
