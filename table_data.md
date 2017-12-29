@@ -1,8 +1,8 @@
 ﻿General Info                    |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
 Scripting                       |Good:1:C# / UnityScript         |Good:1:C# / C++ / GDScript      |Fair:0.5:Lua / Angel / C++      |Fair:0.6:Lua / C# (WIP) / C++  |Good:1:C# / C++                 |1 if has a popular (top 10) managed language, 0.5 for other managed language. Check UrhoSharp and Atomic for extra Urho bindings.
-Platform Support                |Superb:1:Win / Mac / Lin / iOS / And / Web  |Very Good:0.9:Win / Mac / Lin / iOS / And / Rpi  |Superb:1:Win / Mac / Lin / iOS / And / Web / Rpi  |Mediocre:0.5:Win  |Mediocre:0.6:Win / Lin  |Consoles Not included because of legal limitations for opensource projects.
-Performance                     |Good:0.6                        |Fair:0.4                        |Very Good:0.8                   |Superb:1                        |Superb:1                        |This is an arbitrary but somewhat educated guess.
+Platform Support:7              |Superb:1:Win / Mac / Lin / iOS / And / Web  |Very Good:0.9:Win / Mac / Lin / iOS / And / Rpi  |Superb:1:Win / Mac / Lin / iOS / And / Web / Rpi  |Mediocre:0.5:Win  |Mediocre:0.6:Win / Lin  |Consoles Not included because of legal limitations for opensource projects.
+Performance:6                   |Good:0.6                        |Fair:0.4                        |Very Good:0.8                   |Superb:1                        |Superb:1                        |This is an arbitrary but somewhat educated guess.
 Source Access                   |0:Decompiled code on GitHub     |1                               |1                               |1                               |1                               |
 Permissive License              |0                               |1:MIT                           |1:MIT                           |1:MIT                           |1:Pay what you want             |
 3rd Party Libraries             |★★★★★                       |★★                            |★                               |★                              |★                              |Official support for Game Services, Social Media, Billing Services, etc. Even when there's no official support you can still use most of these libraries in most engines.
@@ -11,9 +11,9 @@ Production-ready                |1                               |0.8:v3.0 not q
 
 Documentation                   |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
-API Docs                        |1                               |1                               |1                               |0                               |1                               |Official
-API Snippets                    |1                               |0                               |0                               |0                               |0                               |Official
-Manuals                         |1                               |0                               |0.4:Old wiki, forums            |0                               |0                               |Official
+API Docs:1                      |1                               |1                               |1                               |0                               |1                               |Are there official API docs? (could be generated from source comments, scoring ~= coverage)
+API Snippets:1                  |1                               |0                               |0                               |0                               |0                               |Are there code snippets in the API docs?
+Manuals                         |1                               |0                               |0.4:Old wiki, forums            |0                               |0                               |
 Tutorials                       |1                               |0                               |0                               |0                               |0                               |Official
 Video Tutorials                 |1                               |0                               |0                               |0.4:A few                       |0                               |Official
 Community Docs/Tuts             |1                               |0.4:A few                       |0                               |0                               |0                               |
@@ -21,12 +21,15 @@ Commercial Material             |1                               |0             
 
 Editor                          |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
-Drag and Drop Prefabs           |                                |                                |                                |                                |                                |
-Nested Prefabs                  |                                |                                |                                |                                |                                |
+DnD Prefabs Into Scene:8        |1                               |                                |                                |                                |                                |
+DnD Mesh Assets Into Scene:9    |1                               |                                |                                |                                |                                |Automatically creates node with mesh being dropped
+DnD Materials Onto Scene Objs:10|1                               |                                |                                |                                |                                |Assign materials to objects on the scene with drag and drop
+DnD To Create Prefab:11         |1                               |                                |                                |                                |                                |Drag and drop objects from hierarchy view into project view creates a prefab for the object
+Nested Prefabs                  |0                               |                                |                                |                                |                                |
 Animation Curves Editor         |1                               |1                               |0                               |0                               |0                               |
 Animation State Machines Ed.    |1                               |1                               |0                               |1                               |0                               |
 Auto Inspector Variable         |1                               |                                |0                               |1                               |1                               |Variables from scripts exposed in the inspector with minimal or no extra code
-Snapping                        |1:Grid/Origin->Surf/Vertex      |0.8:1:Grid/Origin->Surf         |0.8:Grid/Origin->Surf           |1:Grid/Origin->Surf/Vertex      |0.8:Grid/Origin->Surf           |
+Snapping                        |1:Grid/Origin->Surf/Vertex      |0.8:Grid/Origin->Surf           |0.8:Grid/Origin->Surf           |1:Grid/Origin->Surf/Vertex      |0.8:Grid/Origin->Surf           |
 Visual Shader Editor            |0                               |1                               |0                               |0                               |0                               |
 Visual Scripting                |0                               |0:WIP                           |0                               |0                               |0                               |
 Visual UI editor                |1                               |1                               |0                               |0                               |0                               |
@@ -158,6 +161,7 @@ Point light texture             |                                |              
 3D space text                   |                                |                                |                                |                                |                                |
 SDF Text Rendering              |1:TextMeshPro                   |                                |1                               |                                |                                |
 Static batching                 |1                               |                                |                                |                                |                                |
+Volumetric lights               |0.2:One in Adam demo is unusable|                                |                                |                                |                                |Real volumetric, not faked in post processing
 
 Debugging                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
@@ -170,7 +174,7 @@ Screen-Space Reflection         |1                               |0             
 Depth of Field                  |1                               |1                               |0                               |1                               |                                |
 Tonemapping                     |1                               |1                               |0                               |1                               |1                               |
 Bloom                           |1                               |1                               |0                               |1                               |                                |
-God Rays                        |1                               |                                |0                               |1                               |                                |AKA Light/Sun Shafts
+God Rays:1                      |1                               |                                |0                               |1                               |                                |The faked kind (in post processing), not volumetric AKA Sun Shafts AKA Light Shafts
 SSAO                            |1                               |1                               |                                |1                               |1                               |
 FXAA                            |1                               |1                               |                                |1                               |1                               |
 Height-based fog                |1                               |                                |                                |1                               |1                               |

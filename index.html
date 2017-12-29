@@ -2,284 +2,342 @@
 <html>
 
 <head>
-    <title>some thing</title>
+<title>some thing</title>
 
-    <style>
+<style>
 
+table {
+    border-collapse: collapse;
+}
 
+td {
+    padding: 0 0.2em;
+}
 
-        table {
-            border-collapse: collapse;
-        }
+tr.section_header {
+    height: 3em;
+    vertical-align: bottom;
+    background: linear-gradient(to bottom, #fff, #eee);
+    cursor: pointer;
+}
 
-        td {
-            padding: 0 0.2em;
-        }
+    tr.section_header > td:nth-child(even) {
+        background: linear-gradient(to bottom, #fff, #ddd);
+    }
 
-        tr.section_header {
-            height: 3em;
-            vertical-align: bottom;
-            background: linear-gradient(to bottom, #fff, #eee);
-            cursor: pointer;
-        }
+tr.section_content:nth-child(odd) {
+    background: linear-gradient(to right, #fff, #fff, #eee, #fff, #fff, #fff, #eee, #fff);
+}
 
-        tr.section_header > td:nth-child(even) {
-            background: linear-gradient(to bottom, #fff, #ddd);
-        }
+tr.section_content > td > div {
+    border: 2px solid transparent;
+    border-radius: 1em;
+    margin: 0.2em 0;
+    text-align: center;
+}
 
-        tr.section_content:nth-child(odd) {
-            background: linear-gradient(to right, #fff, #fff, #eee, #fff, #fff, #fff, #eee, #fff);
-        }
-
-        tr.section_content > td > div {
-            border: 2px solid transparent;
-            border-radius: 1em;
-            margin: 0.2em 0;
-            text-align: center;
-        }
-
-        tr.section_content > td:nth-child(1) > div {
-            border: 2px solid transparent;
-            border-radius: 1em;
-            margin: 0.2em 0;
-            text-align: right;
-        }
-
-        div.tooltip {
-            position: relative;
-            border: 2px dotted black !important;
-        }
-
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 10em;
-            background-color: #000;
-            color: #fff;
-            padding: 0.8em 0.4em;
-            position: absolute;
-            z-index: 1;
-            top: 1em;
-            left: 0;
-        }
-
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-        }
+tr.section_content > td:nth-child(1) > div {
+    border: 2px solid transparent;
+    border-radius: 1em;
+    margin: 0.2em 0;
+    text-align: right;
+}
 
 
-        div.ntooltip {
-            position: relative;
-        }
 
-        div.ntooltip > info {
-            border: 2px solid #000;
-            width: 1.2em;
-            display: block;
-            margin: auto;
-            border-radius: 1em;
-            font-weight: bolder;
-        }
+/*tooltips*/
+div.tooltip {
+    position: relative;
+    border: 2px dotted rgba(0,0,0,0.5) !important;
+}
 
-        .ntooltip .ntooltiptext {
-            visibility: hidden;
-            display: inline-block;
-            background-color: #000;
-            color: #fff;
-            padding: 0.8em 0.8em;
-            position: absolute;
-            z-index: 1;
-            top: 1em;
-            right: 0;
-            text-align: right;
-            width: 20em;
-        }
+.tooltiptext {
+    visibility: hidden;
+    width: 10em;
+    white-space: nowrap;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+}
 
-        .ntooltip:hover .ntooltiptext {
-            visibility: visible;
-        }
+.tooltiptext a {
+    color: #aef;
+    font-weight: bold;
+}
+
+.tooltiptext > span {
+    background: #111;
+    color: #eee;
+    padding: 0.4em;
+    position: absolute;
+    white-space: normal;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 
-    
-    </style>
+div.htooltip {
+    border: none !important;
+    text-decoration: underline;
+}
+
+.htooltiptext {
+    right: 0;
+    text-align: right;
+    width: 100%;
+}
+
+.htooltiptext > span {
+    right: 0;
+}
+
+
+div.ntooltip {
+    border: none !important;
+}
+
+div.ntooltip > info {
+    border: 2px solid #000;
+    width: 1.2em;
+    display: block;
+    margin: auto;
+    border-radius: 1em;
+    font-weight: bolder;
+}
+
+.ntooltiptext {
+    right: 0;
+    text-align: right;
+    width: 20em;
+}
+
+.ntooltiptext > span {
+    right: 0;
+}
+</style>
+
 </head>
 
 <body>
 
-    <h1>some</h1>
-    <p>thing</p>
+<h1>some</h1>
+<p>thing</p>
 
-    <div id="table_data">Loading data... (requires javascript)</div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
+Beware: early WIP!
 
-        var colors = [ //TODO color lerper
-        "f99",
-        "fa9",
-        "fb9",
-        "fc9",
-        "fd9",
-        "fe9",
-        "ff9",
-        "ef9",
-        "df9",
-        "cf9",
-        "bf9",
-        "af9",
-        "9f9"
-        ];
+<div id="table_data">Loading data... (requires javascript)</div>
 
-        function colorFromWeight(weight) {
-            return colors[parseInt(weight * (colors.length - 1))];
-        }
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
 
-        function glyphFromWeight(weight) {
-            if (weight == 0) return "✗";
-            else if (weight == 1) return "✔";
-            return "⍻";
-        }
+var colors = [ //TODO color lerper
+"f99",
+"fa9",
+"fb9",
+"fc9",
+"fd9",
+"fe9",
+"ff9",
+"ef9",
+"df9",
+"cf9",
+"bf9",
+"af9",
+"9f9"
+];
 
-        function newEntry(weight, text, tooltip) {
-            return {
-                weight: weight,
-                text: text,
-                tooltip: tooltip
-            };
-        }
+function colorFromWeight(weight) {
+    return colors[parseInt(weight * (colors.length - 1))];
+}
+
+function glyphFromWeight(weight) {
+    if (weight == 0) return "✗";
+    else if (weight == 1) return "✔";
+    return "⍻";
+}
+
+function newEntry(weight, text, tooltip) {
+    return {
+        weight: weight,
+        text: text,
+        tooltip: tooltip
+    };
+}
         
-        function parseEntry(raw) {
-            var elements = raw.trim().split(":");
-            //console.log("elements", elements);
-            if (elements.length == 1) {
-                var element = elements[0];
-                var number = parseFloat(element);
-                if (!isNaN(number)) return newEntry(number, glyphFromWeight(number));
-                if (element[0] == "★") return newEntry((element.length-1)/4, element);
-            }
-            else if (elements.length == 2) {
-                var elementA = elements[0];
-                var elementB = elements[1];
-                var numberInA = parseFloat(elementA);
-                if (!isNaN(numberInA)) return newEntry(numberInA, glyphFromWeight(numberInA), elementB);
-                var numberInB = parseFloat(elementB);
-                if (!isNaN(numberInB)) return newEntry(numberInB, elementA);
-            }
-            else if (elements.length == 3) {
-                var elementA = elements[0];
-                var elementB = elements[1];
-                var elementC = elements[2];
-                var numberInB = parseFloat(elementB);
-                if (!isNaN(numberInB)) return newEntry(numberInB, elementA, elementC);
-            }
-            if (elements[0] == "") return newEntry(0, "NO DATA");
-            return newEntry(0, "ERROR!!!");
-        }
+function parseEntry(raw) {
+    var elements = raw.trim().split(":");
+    //console.log("elements", elements);
+    if (elements.length == 1) {
+        var element = elements[0];
+        var number = parseFloat(element);
+        if (!isNaN(number)) return newEntry(number, glyphFromWeight(number));
+        if (element[0] == "★") return newEntry((element.length-1)/4, element);
+    }
+    else if (elements.length == 2) {
+        var elementA = elements[0];
+        var elementB = elements[1];
+        var numberInA = parseFloat(elementA);
+        if (!isNaN(numberInA)) return newEntry(numberInA, glyphFromWeight(numberInA), elementB);
+        var numberInB = parseFloat(elementB);
+        if (!isNaN(numberInB)) return newEntry(numberInB, elementA);
+    }
+    else if (elements.length == 3) {
+        var elementA = elements[0];
+        var elementB = elements[1];
+        var elementC = elements[2];
+        var numberInB = parseFloat(elementB);
+        if (!isNaN(numberInB)) return newEntry(numberInB, elementA, elementC);
+    }
+    if (elements[0] == "") return newEntry(0, "NO DATA");
+    return newEntry(0, "ERROR!!!");
+}
 
-        function parseLine(line) {
-            console.log("rawLine", line);
-            var rawEntries = line.split("|");
-            var entries = [];
-            for (var i = 1; i < rawEntries.length-1; i++) {
-                entries.push(parseEntry(rawEntries[i]));
-                //console.log("parsedEntry", parseEntry(rawEntries[i]));
-            }
-            return {
-                lineHeader: rawEntries[0],
-                lineNotes: rawEntries[rawEntries.length-1],
-                lineEntries: entries
-            }
-        }
+function parseLine(line) {
+//    console.log("rawLine", line);
+    var rawEntries = line.split("|");
+    var entries = [];
+    for (var i = 1; i < rawEntries.length-1; i++) {
+        entries.push(parseEntry(rawEntries[i]));
+        //console.log("parsedEntry", parseEntry(rawEntries[i]));
+    }
+    return {
+        lineHeader: rawEntries[0],
+        lineNotes: rawEntries[rawEntries.length-1],
+        lineEntries: entries
+    }
+}
         
-        function calcSectionHeader(rawHeader, parsedLines) {
-            var headers = rawHeader.split("|");
-            for (var i = 0; i < headers.length-2; i++) {
-                var sum = 0;
-                for (var j = 0; j < parsedLines.length; j++) {
-                    //console.log("======================="+i+", "+j);
-                    //console.log(parsedLines);
-                    sum += parsedLines[j].lineEntries[i].weight;
-                }
-                var fix = sum.toFixed(1);
-                if (fix[fix.length - 1] == "0") fix = fix.slice(0, fix.length - 2);
-                headers[i + 1] += "<sup>" + fix + "</sup>&frasl;<sub>" + parsedLines.length + "</sub>";
-                console.log(headers);
-            }
-            return headers;
+function calcSectionHeader(rawHeader, parsedLines) {
+    var headers = rawHeader.split("|");
+    for (var i = 0; i < headers.length-2; i++) {
+        var sum = 0;
+        for (var j = 0; j < parsedLines.length; j++) {
+            //console.log("======================="+i+", "+j);
+            //console.log(parsedLines);
+            sum += parsedLines[j].lineEntries[i].weight;
         }
+        var fix = sum.toFixed(1);
+        if (fix[fix.length - 1] == "0") fix = fix.slice(0, fix.length - 2);
+        headers[i + 1] += "<sup>" + fix + "</sup>&frasl;<sub>" + parsedLines.length + "</sub>";
+//        console.log(headers);
+    }
+    return headers;
+}
 
-        function parseSection(section) {
-            var rawLines = section.trim().split("\n");
-            var lines = [];
-            console.log("rawLines", rawLines);
-            for (var i = 2; i < rawLines.length; i++) {
-                lines.push(parseLine(rawLines[i]));
-            }
-            console.log("parsedLines", lines);
-            return {
-                sectionHeader: calcSectionHeader(rawLines[0], lines),
-                sectionLines: lines
+function parseSection(section) {
+    var rawLines = section.trim().split("\n");
+    var lines = [];
+//    console.log("rawLines", rawLines);
+    for (var i = 2; i < rawLines.length; i++) {
+        lines.push(parseLine(rawLines[i]));
+    }
+    //console.log("parsedLines", lines);
+    return {
+        sectionHeader: calcSectionHeader(rawLines[0], lines),
+        sectionLines: lines
+    }
+}
+
+//TODO remove this (testing only)
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                var allText = rawFile.responseText;
+                callback(allText);
             }
         }
+    }
+    rawFile.send(null);
+}
 
-        $(document).ready(function () {
-            $.get("https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md", function (data) {
-                
-                var sections = data.trim().split("\n\n");
+$(document).ready(function () {
+    //$.get("https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md", function (data) {
+    readTextFile("file:///F:/GitHub/Engines/table_data.md", function (data) {
 
+        var sections = data.trim().split("\n\n");
 
-                var finalTable = "<table>";
+        var finalTable = "<table>";
 
-                for (var i = 0; i < sections.length; ++i) {
-                //for (var i = 0; i < 1; ++i) {
+        for (var i = 0; i < sections.length; ++i) {
+            //for (var i = 0; i < 1; ++i) {
 
-                    var sectionData = parseSection(sections[i]);
+            var sectionData = parseSection(sections[i]);
 
-                    console.log(sectionData);
+//            console.log(sectionData);
                     
-                    finalTable += "<tr class=\"section_header\">";
+            finalTable += "<tr class=\"section_header\">";
 
-                    for (var j = 0; j < sectionData.sectionHeader.length; j++) {
-                        finalTable += "<td><div>" + sectionData.sectionHeader[j] + "</div></td>";
-                    }
+            for (var j = 0; j < sectionData.sectionHeader.length; j++) {
+                finalTable += "<td><div>" + sectionData.sectionHeader[j] + "</div></td>";
+            }
 
-                    finalTable += "</tr>";
+            finalTable += "</tr>";
 
 
-                    for (var k = 0; k < sectionData.sectionLines.length; k++) {
-                        finalTable += "<tr class=\"section_content\">";
-                        var line = sectionData.sectionLines[k];
-                        finalTable += "<td><div>" + line.lineHeader + "</div></td>";
+            for (var k = 0; k < sectionData.sectionLines.length; k++) {
 
-                        for (var l = 0; l < line.lineEntries.length; l++) {
-                            var entry = line.lineEntries[l];
-                            var classes = "";
-                            if (entry.tooltip != undefined) classes += "tooltip ";
-                            finalTable += "<td><div class=\""+classes+"\" style=\"background-color:#" + colorFromWeight(entry.weight) + "\">" + entry.text;
-                            if (entry.tooltip != undefined) finalTable += "<span class=\"tooltiptext\">"+entry.tooltip+"</span>";
-                            finalTable += "</div></td>";
-                        }
+                finalTable += "<tr class=\"section_content\">";
+                var line = sectionData.sectionLines[k];
 
-                        var notes = "";
 
-                        if (line.lineNotes != "") {
-                            notes = "<info>i</info><span class=\"ntooltiptext\">" + line.lineNotes + "</span>";
-                        }
+                var notesAndAKAs = line.lineNotes.split("AKA");
 
-                        finalTable += "<td><div class=\"ntooltip\">" + notes + "</div></td>";
-                        finalTable += "</tr>";
-                    }
+                var rColNotes = notesAndAKAs[0];
+                var AKAs = notesAndAKAs.slice(1, notesAndAKAs.length);
 
-                };
-//
-                finalTable += "</table>";
-                $("#table_data").html(finalTable);
-            });
-        });
+                var hTooltip = "";
 
-        $(document).on('click', ".section_header", function () {
-            $(this).nextUntil('.section_header').find('div').slideToggle();
-        });
-    </script>
+                var hSplit = line.lineHeader.split(":");
+
+                for (var a = 0; a < AKAs.length; a++) {
+                    hTooltip += "A.K.A: " + AKAs[a] + "<br/>";
+                }
+
+                var headerText = hSplit[0];
+                if (hSplit.length > 1) hTooltip += "<a href=\"https://github.com/Alan-FGR/Engines/issues/" + hSplit[1] + "\" target=\"_blank\">Discussion</a><br/>";
+
+
+                if (hTooltip != "")
+                    finalTable += "<td><div class=\"tooltip htooltip\">" + headerText + "<div class=\"tooltiptext htooltiptext\"><span>"+hTooltip+"</span></div> </div></td>";
+                else
+                    finalTable += "<td><div>" + headerText + "</div></td>";
+
+
+                for (var l = 0; l < line.lineEntries.length; l++) {
+                    var entry = line.lineEntries[l];
+                    var classes = "";
+                    if (entry.tooltip != undefined) classes += "tooltip ";
+                    finalTable += "<td><div class=\""+classes+"\" style=\"background-color:#" + colorFromWeight(entry.weight) + "\">" + entry.text;
+                    if (entry.tooltip != undefined) finalTable += "<div class=\"tooltiptext\"><span>"+entry.tooltip+"</span></div>";
+                    finalTable += "</div></td>";
+                }
+
+
+                var notes = "";
+                if (rColNotes != "") {
+                    notes = "<info>i</info><div class=\"tooltiptext ntooltiptext\"><span>" + rColNotes + "</span></div>";
+                }
+
+                finalTable += "<td><div class=\"tooltip ntooltip\">" + notes + "</div></td>";
+                finalTable += "</tr>";
+            }
+
+        };
+
+        finalTable += "</table>";
+        $("#table_data").html(finalTable);
+    });
+});
+
+$(document).on('click', ".section_header", function () {
+    $(this).nextUntil('.section_header').find('div').toggle();
+});
+</script>
 
 </body>
 </html>

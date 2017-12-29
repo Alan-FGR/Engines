@@ -1,6 +1,6 @@
 ﻿# Engines
 
-accepted formats:
+accepted data formats:
 
 weight
 
@@ -11,3 +11,15 @@ weight:tooltip
 text:weight
 
 text:weight:tooltip
+
+
+feature name format:
+
+name:issue_number
+
+
+line notes format:
+
+line notes AKA feature aka1 AKA feature aka2
+
+akas are 
