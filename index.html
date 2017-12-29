@@ -256,8 +256,8 @@ function readTextFile(file, callback) {
 }
 
 $(document).ready(function () {
-    //$.get("https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md", function (data) {
-    readTextFile("file:///F:/GitHub/Engines/table_data.md", function (data) {
+    $.get("https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md", function (data) {
+    //readTextFile("file:///F:/GitHub/Engines/table_data.md", function (data) {
 
         var sections = data.trim().split("\n\n");
 
