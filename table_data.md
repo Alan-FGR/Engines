@@ -96,7 +96,7 @@ Custom Inspector UI             |1                               |              
 Sprite Editor / Mapper:34       |1                               |                                |                                |                                |                                |Tool that allows you to map sprites from a texture/atlas
 Sprite Packer UI:35             |1                               |                                |                                |                                |                                |
 Terrain Editor                  |1                               |                                |                                |                                |                                |
-Foliage Editor                  |0.6:Trees only                  |                                |                                |                                |                                |
+Tree Editor:37                  |0.6:Trees only                  |                                |                                |                                |                                |
 Foliage Painting                |1                               |                                |                                |                                |                                |
 
 Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
