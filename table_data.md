@@ -19,13 +19,205 @@ Video Tutorials                 |1                               |0             
 Community Docs/Tuts             |1                               |0.4:A few                       |0                               |0                               |0                               |
 Commercial Material             |1                               |0                               |0                               |0                               |0                               |Books. paid courses, etc
 
+Editor                          |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+-|-|-|-|-|-|-
+Drag and Drop Prefabs           |                                |                                |                                |                                |                                |
+Nested Prefabs                  |                                |                                |                                |                                |                                |
+Animation Curves Editor         |1                               |1                               |0                               |0                               |0                               |
+Animation State Machines Ed.    |1                               |1                               |0                               |1                               |0                               |
+Auto Inspector Variable         |1                               |                                |0                               |1                               |1                               |Variables from scripts exposed in the inspector with minimal or no extra code
+Snapping                        |1:Grid/Origin->Surf/Vertex      |0.8:1:Grid/Origin->Surf         |0.8:Grid/Origin->Surf           |1:Grid/Origin->Surf/Vertex      |0.8:Grid/Origin->Surf           |
+Visual Shader Editor            |0                               |1                               |0                               |0                               |0                               |
+Visual Scripting                |0                               |0:WIP                           |0                               |0                               |0                               |
+Visual UI editor                |1                               |1                               |0                               |0                               |0                               |
+IDE integration                 |                                |                                |                                |                                |                                |
+Project View                    |                                |                                |                                |                                |                                |
+Image Assets Preview                         |                                |                                |                                |                                |                                |
+Material Assets Preview                           |                                |                                |                                |                                |                                |
+Prefabs Preview                           |                                |                                |                                |                                |                                |
+Customizable Preview Icon    |0                               |0                               |0                               |1                               |0                               |
+Project Search                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Customizable Layout                           |                                |                                |                                |                                |                                |
+(Un)dockable Views                           |                                |                                |                                |                                |                                |
+Multiple Scene Views             |                                |                                |                                |                                |                                |
+Multiple Views of a Type       |                                |                                |                                |                                |                                |Can you have two project views and two inspector views?
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Scene selection filters           |                                |                                |                                |                                |                                |Can you disable selection of a given object type/layer?
+                           |                                |                                |                                |                                |                                |
+Project view categoriz.   |                                |                                |                                |                                |                                |Can you add labels and categorize items? (taxonomy)
+                           |                                |                                |                                |                                |                                |
+             |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Viewport Lighting Modes    |                                |                                |                                |                                |                                |Use scene lighting or editor camera lighting
+Wysiwyg Viewport          |                                |                                |                                |                                |                                |
+2D Viewport Mode           |                                |                                |                                |                                |                                |
+Toggle Viewport Skybox     |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Wireframe Mode                           |                                |                                |                                |                                |                                |
+Shadow Cascades Viewer           |                                |                                |                                |                                |                                |
+Overdraw Viewer             |                                |                                |                                |                                |                                |
+Mipmaps Viewer                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Gbuffers Viewport Mode                          |                                |                                |                                |                                |                                |E.g. Albedo/Normals/etc.
+GI Data Viewer                  |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Lightmap UV Viewer         |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Shader Cost Vport Mode     |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Save/load Layouts                       |                                |                                |                                |                                |                                |
+Disable individ. Gizmos              |                                |                                |                                |                                |                                |Allow user to enable/disable individual gizmos
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Lens Flares                           |                                |                                |                                |                                |                                |
+Light Halo                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+Deferred Rendering               |                                |                                |                                |                                |                                |
+Forward Rendering             |                                |                                |                                |                                |                                |
+Forward+ Rendering          |                                |                                |                                |                                |                                |
+Use Fwd Path for Transp.   |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+                           |                                |                                |                                |                                |                                |
+						   
+						   
+						   
+						   
+
+
 Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
 Terrain System                  |1                               |0:WIP                           |1                               |1                               |1                               |
-Geomipmapping                   |1                               |                                |1                               |1                               |1                               |
+Geomipmapping                   |1                               |0                               |1                               |1                               |1                               |
 Foliage system                  |1                               |0                               |0                               |1                               |0                               |
-Max terrain resolution          |                                |                                |                                |Unlimited                       |                                |(single)
-Tileable Terrains               |1                               |                                |0                               |0                               |0                               |(adjacent awareness)
+Tileable Terrains               |1                               |0                               |0                               |0                               |0                               |(adjacent awareness)
 Terrain splines                 |0                               |0                               |0                               |0                               |0                               |roads/rivers/etc
 Voxel-based (/alternatively)    |0                               |0                               |0                               |0                               |0                               |
 
@@ -38,7 +230,7 @@ Profiling                       |1                               |0             
 -|-|-|-|-|-|-
 Engine                          |0.8:PhysX (very limited)        |0.8:Own/Bullet                  |0.8:Bullet                      |1:PhysX / Bullet(WIP)           |1:PhysX                         |PhysX is objectively the best physics engine to date both in sim quality and performance (check PEEL), but it's proprietary. Unity is very limited in the sense that you can't access most of the API and a ton of stuff is neglected for example articulations and origin shifting.
 Speculative CD                  |1                               |0/0(WIP)                        |1                               |1                               |1                               |
-Multi-threaded                  |0?                              |0                               |0                               |1                               |1                               |
+Multi-threaded                  |0                               |0                               |0                               |1                               |1                               |
 Async Scene                     |0                               |0                               |0                               |0                               |0                               |
 Cloth                           |1                               |                                |                                |                                |                                |
 Particle collision              |1                               |                                |                                |                                |                                |
@@ -47,39 +239,34 @@ APIs                            |Unityᶠʳᵉᵉ                       |Godot  
 -|-|-|-|-|-|-
 Minimum GL                      |v2.0:1                          |v3.0:0.8                        |v2.1:1                          |v2.0:1                          |v4.4:0.5                        |
 Minimum DX                      |v10/11:1                        |0                               |v9.0c:1                         |v9.0c:1                         |v11:0.9                         |
-Vulkan Support                  |1                               |0                               |0                               |0:uses bgfx                     |1                               |
-DX12 Support                    |1                               |0                               |0                               |1                               |                                |
+Vulkan Support                  |1                               |0                               |0                               |0:Uses BGFX                     |1                               |
+DX12 Support                    |1                               |0                               |0                               |1                               |0                               |
 Shader Language                 |Cg / HLSL:1                     |GLSL subset:1                   |GLSL+HLSL:1                     |GLSL-based:1                    |HLSL-based:1                    |Banshee supports subroutines in either GLSL or HLSL
 
 Rendering                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
 Texture Arrays                  |1:No pipeline                   |0                               |1:XML                           |1:No pipeline                   |0                               |
-Runtime GI - Precomputed        |1 (Enlighten(SH)/own)           |1 - VXGI                        |0                               |0                               |0                               |
+Runtime GI - Precomputed        |1 (Enlighten(SH)/own)           |1                               |0                               |0                               |0                               |
 PBR                             |1                               |1                               |1                               |1                               |1                               |
-IBL                             |1                               |1                               |1                               |1                               |1                               |
-Dynamic Batching                |1 (800 vert attrib)             |0                               |0                               |0                               |0                               |This is somewhat important for mobile games
-Auto Instancing                 |1                               |0                               |1                               |1                               |1                               |
 Realtime Reflection Probes      |1                               |1                               |1                               |0                               |1                               |
+IBL                             |1                               |1                               |1                               |1                               |1                               |
+Realtime IBL Probes             |0                               |0                               |0                               |0                               |0                               |
+Dynamic Batching                |1:Max 800 vert attribs          |0                               |0                               |0                               |0                               |This is somewhat important for mobile games
+Auto Instancing                 |1                               |0                               |1                               |1                               |1                               |
 Soft Shadows                    |1                               |1                               |1                               |1                               |0 (WIP)                         |
 LOD System                      |1                               |0.25:terrible                   |1                               |1                               |1                               |
-Post Processing                 |1                               |1                               |1                               |1                               |1                               |Remove?
-Realtime IBL Probes             |0                               |0                               |0                               |0                               |0                               |
-SS Reflection                   |0                               |0                               |0                               |0                               |1                               |Screen-Space
 MSAA                            |1                               |0                               |1                               |0                               |1                               |
 TXAA                            |0                               |0                               |0                               |0                               |0                               |
 VR Support                      |1                               |0                               |0                               |0                               |0                               |
-GPU Profiling                   |0                               |0                               |0                               |0                               |1                               |
-Frame Debugging                 |1                               |0                               |0                               |0                               |0                               |
-Debug Drawing                   |1                               |1                               |1                               |1                               |1                               |Remove this?
+GPU Profiling                   |1                               |0                               |0                               |0                               |1                               |
 Occlusion Culling               |1                               |                                |1                               |1                               |0                               |
 Particles                       |1                               |1                               |1                               |1                               |1                               |Remove this?
 Billboards                      |1                               |1                               |1                               |1                               |0                               |
 Impostors                       |0                               |0                               |0                               |0                               |0                               |
-Deferred decals                 |0 (WIP?)                        |1                               |1                               |1                               |0                               |
+Deferred decals                 |0                               |1                               |1                               |1                               |0                               |
 Mesh decals                     |0                               |0                               |1                               |0                               |0                               |
 Skinned Decals                  |0                               |0                               |1                               |0                               |0                               |
 Atmospheric scattering          |1                               |0                               |0                               |1                               |0                               |
-Height-based fog                |1                               |                                |                                |1                               |1                               |
 Skybox                          |1                               |1                               |1                               |1                               |1                               |
 Fur                             |0                               |0                               |0                               |1                               |0                               |
 Cascaded shadows                |1                               |1                               |1                               |1                               |1                               |
@@ -93,14 +280,28 @@ Point light texture             |                                |              
 SDF Text Rendering              |1:TextMeshPro                   |                                |1                               |                                |                                |
 Static batching                 |1                               |                                |                                |                                |                                |
 
+Debugging                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+-|-|-|-|-|-|-
+Debug Drawing                   |1                               |1                               |1                               |1                               |1                               |Remove this?
+Frame Debugging                 |1                               |0                               |0                               |0                               |0                               |
+
 Rendering - Post processing     |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
+Screen-Space Reflection         |1                               |0                               |0                               |0                               |1                               |Screen-Space
 Depth of Field                  |1                               |1                               |0                               |1                               |                                |
 Tonemapping                     |1                               |1                               |0                               |1                               |1                               |
 Bloom                           |1                               |1                               |0                               |1                               |                                |
-Godrays                         |                                |                                |0                               |1                               |                                |
+God Rays                        |1                               |                                |0                               |1                               |                                |AKA Light/Sun Shafts
 SSAO                            |1                               |1                               |                                |1                               |1                               |
 FXAA                            |1                               |1                               |                                |1                               |1                               |
+Height-based fog                |1                               |                                |                                |1                               |1                               |
+Vector-based motion blur        |1                               |                                |                                |                                |                                |
+White balancing                 |1:In color grading              |                                |                                |                                |                                |
+Chromatic Aberration            |1                               |                                |                                |                                |                                |
+Adaptive exposure               |1                               |                                |                                |                                |                                |AKA Eye adaptation
+Grain                           |1                               |                                |                                |                                |                                |
+Vignetting                      |1                               |                                |                                |                                |                                |
+Color Grading                   |1                               |                                |                                |                                |                                |This may also provide white balancing
 
 2D                              |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
@@ -116,36 +317,51 @@ Pixel Units                     |0                               |1             
 
 Animation                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
-GPU Skinning                    |1                               |                                |1                               |1                               |                                |
-IK                              |0:only humanoid                 |0                               |1                               |1                               |1                               |
-Huma0id-aware                   |1                               |0                               |0                               |0                               |0                               |
-State machines                  |1                               |1                               |0                               |1                               |0                               |
-Linear Blend                    |1                               |1                               |1                               |1                               |1                               |
-Radial Blend                    |1                               |0                               |0                               |0                               |0                               |AKA Freeform
-Blend Shapes                    |1                               |1                               |1                               |0                               |1                               |
 Skeletal                        |1                               |1                               |1                               |1                               |1                               |
+GPU Skinning                    |1                               |                                |1                               |1                               |                                |
+IK                              |0.2:Only humanoid               |0                               |1                               |1                               |1                               |
+Humanoid-aware                  |1                               |0                               |0                               |0                               |0                               |
+State machines                  |1                               |1                               |0                               |1                               |0                               |
+Blend Trees                     |1                               |1                               |0                               |1                               |0                               |
+Linear Blending                 |1                               |1                               |1                               |1                               |1                               |
+Radial Blending                 |1                               |0                               |0                               |0                               |0                               |AKA Freeform
+Blend Shapes                    |1                               |1                               |1                               |0                               |1                               |
+Bone Groups Blending            |0.2:Only humanoid               |0                               |0                               |0                               |0                               |E.g. Upper body/lower body
 Generic Tweening                |0                               |0                               |1:Animation Properties          |0                               |1                               |
 Anim Events                     |1                               |1                               |1                               |1                               |1                               |
-Anim Curves                     |1                               |0                               |0                               |0                               |0                               |
+Anim Curves (Values)            |1                               |0                               |0                               |0                               |0                               |Sample values from custom curves attached to animations (E.g. character height at a given pose for collision)
 Root Bone Movement              |1                               |0                               |0                               |1                               |1                               |
-Blend Trees                     |1                               |1                               |0                               |1                               |0                               |
 
 Input                           |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
-GamePad                         |1                               |1                               |1                               |1                               |1                               |
-HL Abstraction                  |1 (terrible)                    |0                               |0                               |0                               |1                               |
+GamePad Support                 |1                               |1                               |1                               |1                               |1                               |
+High Level Abstraction          |1 (terrible)                    |0                               |0                               |0                               |1                               |
+Built-in Key Mapper             |                                |                                |                                |                                |                                |
 
 Audio                           |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
 Streaming                       |1                               |0                               |0                               |0                               |1                               |
-Effects                         |                                |                                |                                |                                |                                |
+Mic Input                       |1                               |                                |                                |                                |                                |
+Per-Listener Mixing             |1                               |                                |                                |                                |                                |
+Rolloff Modes                   |1                               |                                |                                |                                |                                |Typically Linear/Logarithmic
 
 Audio - Effects                 |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
-Echo                            |                                |                                |0                               |1                               |1                               |
-Doppler                         |                                |                                |0                               |                                |1                               |
+Effect Zones                    |0                               |                                |                                |                                |                                |
+Echo                            |1                               |                                |0                               |1                               |1                               |
+Doppler                         |1                               |                                |0                               |                                |1                               |
 Reverb                          |1                               |                                |                                |                                |1                               |
-Space-aware reverb              |                                |                                |0                               |                                |0                               |
+Reverb Zones                    |1                               |                                |0                               |                                |0                               |
+Realtime Envir. Reverb          |0                               |                                |0                               |                                |0                               |
+Low Pass                        |1                               |                                |                                |                                |                                |
+High Pass                       |1                               |                                |                                |                                |                                |
+Flange                          |1                               |                                |                                |                                |                                |
+Distortion                      |1                               |                                |                                |                                |                                |
+Normalization                   |1                               |                                |                                |                                |                                |
+Equalization                    |1                               |                                |                                |                                |                                |
+Pitch Shift                     |1                               |                                |                                |                                |                                |
+Chorus                          |1                               |                                |                                |                                |                                |
+Compressor                      |1                               |                                |                                |                                |                                |
 
 Network                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
@@ -175,19 +391,6 @@ UI                              |Unityᶠʳᵉᵉ                       |Godot  
 In-Game Restrained              |1                               |1                               |1                               |1 (Turbobadger)                 |1                               |
 In-Game Immediate               |1                               |0                               |0                               |1 (Dear Imgui)                  |0                               |
 
-Editor                          |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
--|-|-|-|-|-|-
-Drag and Drop Prefabs           |                                |                                |                                |                                |                                |
-Nested Prefabs                  |                                |                                |                                |                                |                                |
-Customizable Prefab Previews    |0                               |0                               |0                               |1                               |0                               |
-Animation Curves Editor         |1                               |1                               |0                               |0                               |0                               |
-Animation State Machines Ed.    |1                               |1                               |0                               |1                               |0                               |
-Auto Inspector Variable         |1                               |                                |0                               |1                               |1                               |Variables from scripts exposed in the inspector with minimal or no extra code
-Snapping                        |1:Grid/Origin->Surf/Vertex      |0.8:1:Grid/Origin->Surf         |0.8:Grid/Origin->Surf           |1:Grid/Origin->Surf/Vertex      |0.8:Grid/Origin->Surf           |
-Visual Shader Editor            |0                               |1                               |0                               |0                               |0                               |
-Visual Scripting                |0                               |0:WIP                           |0                               |0                               |0                               |
-Visual UI editor                |1                               |1                               |0                               |0                               |0                               |
-IDE integration                 |                                |                                |                                |                                |                                |
 
 Others                          |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
