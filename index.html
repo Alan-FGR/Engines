@@ -171,6 +171,22 @@ div.ntooltip > info {
 <h1>some</h1>
 <p>thing</p>
 
+<p></p>
+<p>§ = WIP</p>
+<p>ᴬ = AKAs</p>
+<p>ᴰ = Discussion</p>
+<p>†</p>
+<p>‡</p>
+<p>^</p>
+<p>~</p>
+<p>¶</p>
+<p>♦</p>
+<p>◊</p>
+<p></p>
+<p></p>
+<p></p>
+
+
 <span>Beware: early WIP!</span><br/>
 
 <button class="toggle">Toggle All</button>
@@ -302,8 +318,7 @@ function readTextFile(file, callback) {
     rawFile.onreadystatechange = function () {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
-                var allText = rawFile.responseText;
-                callback(allText);
+                callback(rawFile.responseText);
             }
         }
     }
@@ -311,8 +326,17 @@ function readTextFile(file, callback) {
 }
 
 $(document).ready(function () {
-    $.get("https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md", function (data) {
-    //readTextFile("file:///F:/GitHub/Engines/table_data.md", function (data) {
+
+	var loadFunction = $.get;
+	var dataLocation = "https://raw.githubusercontent.com/Alan-FGR/Engines/master/table_data.md"
+	
+	//if we're loading from disk, load table data from file
+	if (window.location.protocol == "file:") {
+		loadFunction = readTextFile;
+		dataLocation = "table_data.md";
+	}
+
+    loadFunction(dataLocation, function (data) {
 
         var sections = data.trim().split("\n\n");
 
@@ -349,19 +373,25 @@ $(document).ready(function () {
                 var AKAs = notesAndAKAs.slice(1, notesAndAKAs.length);
 
                 var hTooltip = "";
+				var appendSymbols = "";
 
                 var hSplit = line.lineHeader.split(":");
 
-                for (var a = 0; a < AKAs.length; a++) {
-                    hTooltip += "A.K.A: " + AKAs[a] + "<br/>";
-                }
+				if(AKAs.length > 0){
+					appendSymbols += "ᴬ";
+					for (var a = 0; a < AKAs.length; a++) {
+						hTooltip += "A.K.A: " + AKAs[a] + "<br/>";
+					}
+				}
 
                 var headerText = hSplit[0];
-                if (hSplit.length > 1) hTooltip += "<a href=\"https://github.com/Alan-FGR/Engines/issues/" + hSplit[1] + "\" target=\"_blank\">Discussion</a><br/>";
+                if (hSplit.length > 1) {
+					hTooltip += "<a href=\"https://github.com/Alan-FGR/Engines/issues/" + hSplit[1] + "\" target=\"_blank\">Discussion</a><br/>";
+					appendSymbols += "ᴰ";
+				}   
 
-
-                if (hTooltip != "")
-                    finalTable += "<td><div class=\"tooltip htooltip\">" + headerText + "<div class=\"tooltiptext htooltiptext\"><span>"+hTooltip+"</span></div> </div></td>";
+                if (hTooltip)
+                    finalTable += "<td><div class=\"tooltip htooltip\">" + headerText + appendSymbols + "<div class=\"tooltiptext htooltiptext\"><span>"+hTooltip+"</span></div> </div></td>";
                 else
                     finalTable += "<td><div>" + headerText + "</div></td>";
 
