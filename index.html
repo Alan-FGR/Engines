@@ -51,13 +51,45 @@ tr.section_content > td:nth-child(1) > div {
 
 tr.section_header > td {
     min-width: 6em;
-    text-align: right;
+    text-align: left;
+}
+
+tr.section_header > td > div:first-child {
+    max-width: 5em;
+    white-space: nowrap;
+    padding-left: 0.65em;
+}
+
+tr.section_header > td:first-child > div {
+    white-space: normal;
+    max-width: unset;
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
 }
 
 tr.section_header > td:last-child {
     min-width: 0;
 }
 
+.progress {
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+.progress, .progress > div {
+    height: 5px;
+}
+
+.progress > div {
+    background: rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.4);;
+    float: right
+}
+
+.fraction {
+    color: rgba(0,0,0,0.2);
+    display: inline-block;
+}
 
 /*tooltips*/
 div.tooltip {
@@ -209,14 +241,28 @@ function parseLine(line) {
         //console.log("parsedEntry", parseEntry(rawEntries[i]));
     }
     return {
-        lineHeader: rawEntries[0],
-        lineNotes: rawEntries[rawEntries.length-1],
+        lineHeader: rawEntries[0].trim(),
+        lineNotes: rawEntries[rawEntries.length-1].trim(),
         lineEntries: entries
     }
 }
-        
-function calcSectionHeader(rawHeader, parsedLines) {
-    var headers = rawHeader.split("|");
+
+function newHeader(text, frac) {
+	return {
+		text: text,
+		frac: frac
+	};
+}
+
+function calcSectionHeader(rawHeaders, parsedLines) {
+    var headers = rawHeaders.split("|");
+	
+	for (var i = 0; i < headers.length; i++) headers[i] = headers[i].trim();
+	
+	var retHeaders = [];
+	
+	retHeaders.push(newHeader(headers[0]));
+	
     for (var i = 0; i < headers.length-2; i++) {
         var sum = 0;
         for (var j = 0; j < parsedLines.length; j++) {
@@ -226,10 +272,13 @@ function calcSectionHeader(rawHeader, parsedLines) {
         }
         var fix = sum.toFixed(1);
         if (fix[fix.length - 1] == "0") fix = fix.slice(0, fix.length - 2);
-        headers[i + 1] += "<sup>" + fix + "</sup>&frasl;<sub>" + parsedLines.length + "</sub>";
+        retHeaders.push(newHeader(headers[i + 1] + "<div class=\"fraction\"><sup>" + fix + "</sup>&frasl;<sub>" + parsedLines.length + "</sub></div>", sum/parsedLines.length));
 //        console.log(headers);
     }
-    return headers;
+	
+	retHeaders.push(newHeader(headers[headers.length-1]));
+	
+    return retHeaders;
 }
 
 function parseSection(section) {
@@ -279,7 +328,10 @@ $(document).ready(function () {
             finalTable += "<tr class=\"section_header\">";
 
             for (var j = 0; j < sectionData.sectionHeader.length; j++) {
-                finalTable += "<td><div>" + sectionData.sectionHeader[j] + "</div></td>";
+				var progressDiv = "";
+				if (sectionData.sectionHeader[j].frac != undefined)
+					progressDiv = "<div class=\"progress\" style=\"background:#"+colorFromWeight(sectionData.sectionHeader[j].frac)+";\"><div style=\"width:"+((1-sectionData.sectionHeader[j].frac)*100)+"%;\"></div></div>"
+                finalTable += "<td><div>" + sectionData.sectionHeader[j].text + "</div>"+progressDiv+"</td>";
             }
 
             finalTable += "</tr>";
@@ -337,6 +389,10 @@ $(document).ready(function () {
 
         finalTable += "</table>";
         $("#table_data").html(finalTable);
+		
+		$(".section_content").hide();
+		$("tr.section_header:first-child").nextUntil('.section_header').show();
+		
     });
 });
 

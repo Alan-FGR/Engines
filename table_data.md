@@ -117,7 +117,8 @@ FBX                             |1:AD SDK                        |0.5:Bad suppor
 GLTF                            |0                               |                                |0                               |                                |                                |
 Meshes - Others                 |★★★★★                       |                                |★★★:0.25:Assimp               |                                |                                |
 PSD                             |1                               |                                |0                               |                                |                                |
-Images - Others                 |★★★★★                       |                                |★★★★                         |                                |                                |
+Images - Others                 |★★★★★                       |                                |★★★★★                        |                                |                                |
+Audio                           |★★★★★                       |                                |★★★★★                        |                                |                                |
 Fonts                           |ttf/otf:1                       |                                |ttf/otf:1                       |                                |                                |
 3rd Party Materials             |★★★★★                       |                                |★                               |                                |                               |Do external applications support engine materials, does the engine import materials from 3rd party applications?
 3rd Party Tools Interop         |★★★★★                       |                                |★                               |                                |                                |Does the engine play well with 3rd party tools? E.g. SpeedTree, External Lighting, Character Creators, 3d Scanned Data, etc.
@@ -126,7 +127,6 @@ Scripting                       |Unityᶠʳᵉᵉ                       |Godot  
 -|-|-|-|-|-|-
 Octree Queries                  |0                               |                                |1                               |0                               |1                               |
 Profiling                       |1                               |0                               |0                               |1                               |0                               |
-Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 
 APIs                            |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
@@ -266,8 +266,9 @@ UI                              |Unityᶠʳᵉᵉ                       |Godot  
 In-Game Restrained              |1                               |1                               |1                               |1 (Turbobadger)                 |1                               |
 In-Game Immediate               |1                               |0                               |0                               |1 (Dear Imgui)                  |0                               |
 
-Terrain System                  |1                               |0:WIP                           |1                               |1                               |1                               |
+Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
+Terrain System                  |1                               |0:WIP                           |1                               |1                               |1                               |
 Geomipmapping                   |1                               |0                               |1                               |1                               |1                               |
 Foliage system                  |1                               |0                               |0                               |1                               |0                               |
 Tileable Terrains               |1                               |0                               |0                               |0                               |0                               |(adjacent awareness)
