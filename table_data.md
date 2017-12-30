@@ -115,10 +115,12 @@ Asset Pipeline                  |Unityᶠʳᵉᵉ                       |Godot  
 -|-|-|-|-|-|-
 FBX                             |1:AD SDK                        |0.5:Bad support                 |0.5:Bad support                 |0.8:OpenFBX                     |1:AD SDK                        |
 GLTF                            |0                               |                                |0                               |                                |                                |
+Meshes - Others                 |★★★★★                       |                                |★★★:0.25:Assimp               |                                |                                |
 PSD                             |1                               |                                |0                               |                                |                                |
 Images - Others                 |★★★★★                       |                                |★★★★                         |                                |                                |
 Fonts                           |ttf/otf:1                       |                                |ttf/otf:1                       |                                |                                |
-Meshes                          |★★★★★                       |                                |★★★:0.25:Assimp               |                                |                                |
+3rd Party Materials             |★★★★★                       |                                |★                               |                                |                               |Do external applications support engine materials, does the engine import materials from 3rd party applications?
+3rd Party Tools Interop         |★★★★★                       |                                |★                               |                                |                                |Does the engine play well with 3rd party tools? E.g. SpeedTree, External Lighting, Character Creators, 3d Scanned Data, etc.
 
 Scripting                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
