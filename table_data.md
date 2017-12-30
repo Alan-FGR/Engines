@@ -1,7 +1,7 @@
 ﻿General Info                    |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
 Scripting                       |Good:1:C# / UnityScript         |Good:1:C# / C++ / GDScript      |Fair:0.4:Lua / Angel / C++      |Fair:0.6:Lua / C# (WIP) / C++  |Good:1:C# / C++                 |1 if has a popular (top 10) managed language, 0.5 for other managed language. Check UrhoSharp and Atomic for extra Urho bindings.
-Platform Support:7              |★★★★★:1:Win / Mac / Lin / iOS / And / Web  |★★★★:0.8:Win / Mac / Lin / iOS / And / Rpi  |★★★★★:1:Win / Mac / Lin / iOS / And / Web / Rpi  |★★:0.4:Win / Lin (WIP)  |★★:0.4:Win / Lin  |Consoles Not included because of legal limitations for opensource projects.
+Platform Support:7              |★★★★★:1:Win / Mac / Lin / iOS / And / Web  |★★★★:0.75:Win / Mac / Lin / iOS / And / Rpi  |★★★★★:1:Win / Mac / Lin / iOS / And / Web / Rpi  |★★:0.25:Win / Lin (WIP)  |★★:0.25:Win / Lin  |Consoles Not included because of legal limitations for opensource projects.
 Performance:6                   |Good:0.6                        |Fair:0.4                        |Very Good:0.8                   |Superb:1                        |Superb:1                        |This is an arbitrary but somewhat educated guess.
 Source Access                   |0:Some decomp. code on GitHub   |1                               |1                               |1                               |1                               |
 Permissive License              |0                               |1:MIT                           |1:MIT                           |1:MIT                           |1:Pay what you want             |
@@ -111,31 +111,20 @@ Project View:18                 |1                               |              
 Project Search:23               |1                               |                                |                                |                                |                                |
 Project view categoriz.:25      |1                               |                                |                                |                                |                                |Can you add labels and categorize items? (taxonomy)
 
-Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+Asset Pipeline                  |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
-Terrain System                  |1                               |0:WIP                           |1                               |1                               |1                               |
-Geomipmapping                   |1                               |0                               |1                               |1                               |1                               |
-Foliage system                  |1                               |0                               |0                               |1                               |0                               |
-Tileable Terrains               |1                               |0                               |0                               |0                               |0                               |(adjacent awareness)
-Terrain splines                 |0                               |0                               |0                               |0                               |0                               |roads/rivers/etc
-Voxel-based (/alternatively)    |0                               |0                               |0                               |0                               |0                               |
+FBX                             |1:AD SDK                        |0.5:Bad support                 |0.5:Bad support                 |0.8:OpenFBX                     |1:AD SDK                        |
+GLTF                            |0                               |                                |0                               |                                |                                |
+PSD                             |1                               |                                |0                               |                                |                                |
+Images - Others                 |★★★★★                       |                                |★★★★                         |                                |                                |
+Fonts                           |ttf/otf:1                       |                                |ttf/otf:1                       |                                |                                |
+Meshes                          |★★★★★                       |                                |★★★:0.25:Assimp               |                                |                                |
 
 Scripting                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
 Octree Queries                  |0                               |                                |1                               |0                               |1                               |
 Profiling                       |1                               |0                               |0                               |1                               |0                               |
-
-3D Physics                      |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
--|-|-|-|-|-|-
-Engine                          |0.8:PhysX (very limited)        |0.8:Own/Bullet                  |0.8:Bullet                      |1:PhysX / Bullet(WIP)           |1:PhysX                         |PhysX is objectively the best physics engine to date both in sim quality and performance (check PEEL), but it's proprietary. Unity is very limited in the sense that you can't access most of the API and a ton of stuff is neglected for example articulations and origin shifting.
-Speculative CD                  |1                               |0/0(WIP)                        |1                               |1                               |1                               |
-Multi-threaded                  |0                               |0                               |0                               |1                               |1                               |
-Async Scene                     |0                               |0                               |0                               |0                               |0                               |
-Cloth                           |1                               |                                |                                |                                |                                |
-Particle collision              |1                               |                                |                                |                                |                                |
-Joints                          |1                               |                                |                                |                                |                                |
-Effect Zones                    |0                               |                                |                                |                                |                                |
-Ragdoll Configurator            |1                               |                                |                                |                                |                                |
+Terrain                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 
 APIs                            |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
@@ -183,12 +172,7 @@ SDF Text Rendering              |1:TextMeshPro                   |              
 Static batching                 |1                               |                                |                                |                                |                                |
 Volumetric lights               |0.2:One in Adam demo is unusable|                                |                                |                                |                                |Real volumetric, not faked in post processing
 
-Debugging                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
--|-|-|-|-|-|-
-Debug Drawing                   |1                               |1                               |1                               |1                               |1                               |Remove this?
-Frame Debugging                 |1                               |0                               |0                               |0                               |0                               |
-
-Rendering - Post processing     |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+Rendering - Post Proc.          |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
 Screen-Space Reflection         |1                               |0                               |0                               |0                               |1                               |Screen-Space
 Depth of Field                  |1                               |1                               |0                               |1                               |                                |
@@ -205,48 +189,6 @@ Adaptive exposure               |1                               |              
 Grain                           |1                               |                                |                                |                                |                                |
 Vignetting                      |1                               |                                |                                |                                |                                |
 Color Grading                   |1                               |                                |                                |                                |                                |This may also provide white balancing
-
-2D                              |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
--|-|-|-|-|-|-
-2D support                      |1                               |1                               |1                               |0                               |0:Roadmap                       |
-Sprites                         |1                               |1                               |1                               |0                               |0                               |
-Sprite packing                  |1                               |                                |                                |                                |                                |Not necessarily has UI (see editor)
-Physics                         |1:Box2D                         |1:Own                           |1:Box2D                         |0                               |0                               |
-Audio                           |1                               |1                               |1                               |0                               |1                               |
-Particles                       |0                               |1                               |1                               |0                               |0                               |3D particles are usable for 2D in most cases
-Pixel Perfect Rendering         |0                               |0                               |0                               |0                               |0                               |
-Pixel Units                     |0                               |1                               |0                               |0                               |0                               |
-2D Skeletal Anim                |1                               |1                               |0                               |0                               |0                               |
-Sorting Groups                           |                                |                                |                                |                                |                                |
-9-slice textures                           |                                |                                |                                |                                |                                |
-Sprite Masks                    |1                                |                                |                                |                                |                                |
-Tilemaps                        |                                |                                |                                |                                |                                |
-Tilemap Editor                  |                                |                                |                                |                                |                                |
-
-Animation                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
--|-|-|-|-|-|-
-Skeletal                        |1                               |1                               |1                               |1                               |1                               |
-GPU Skinning                    |1                               |                                |1                               |1                               |                                |
-IK                              |0.2:Only humanoid               |0                               |1                               |1                               |1                               |
-Humanoid-aware                  |1                               |0                               |0                               |0                               |0                               |
-State machines:14               |1                               |1                               |0                               |1                               |0                               |
-Blend Trees                     |1                               |1                               |0                               |1                               |0                               |
-Linear Blending                 |1                               |1                               |1                               |1                               |1                               |
-Radial Blending                 |1                               |0                               |0                               |0                               |0                               |AKA Freeform
-Blend Shapes                    |1                               |1                               |1                               |0                               |1                               |
-Bone Groups Blending            |0.2:Only humanoid               |0                               |0                               |0                               |0                               |E.g. Upper body/lower body
-Generic Tweening                |0                               |0                               |1:Animation Properties          |0                               |1                               |
-Anim Events                     |1                               |1                               |1                               |1                               |1                               |
-Anim Curves (Values)            |1                               |0                               |0                               |0                               |0                               |Sample values from custom curves attached to animations (E.g. character height at a given pose for collision)
-Root Bone Movement              |1                               |0                               |0                               |1                               |1                               |
-
-Input                           |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
--|-|-|-|-|-|-
-GamePad Support                 |1                               |1                               |1                               |1                               |1                               |
-High Level Abstraction          |1 (terrible)                    |0                               |0                               |0                               |1                               |
-Built-in Key Mapper             |                                |                                |                                |                                |                                |
-Touch Input                     |                                |                                |                                |                                |                                |
-Motion Controllers              |                                |                                |                                |                                |                                |VR input
 
 Audio                           |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
@@ -273,12 +215,42 @@ Pitch Shift                     |1                               |              
 Chorus                          |1                               |                                |                                |                                |                                |
 Compressor                      |1                               |                                |                                |                                |                                |
 
-Network                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+Input                           |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
-Scene Replication               |1                               |1                               |1                               |0                               |0                               |
-RPC                             |                                |                                |                                |                                |                                |
-HTTP requests                   |                                |                                |1                               |                                |                                |irrelevant?
-Voice over network              |0                               |0                               |0                               |0                               |0                               |
+GamePad Support                 |1                               |1                               |1                               |1                               |1                               |
+High Level Abstraction          |1 (terrible)                    |0                               |0                               |0                               |1                               |
+Built-in Key Mapper             |                                |                                |                                |                                |                                |
+Touch Input                     |                                |                                |                                |                                |                                |
+Motion Controllers              |                                |                                |                                |                                |                                |VR input
+
+Animation                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+-|-|-|-|-|-|-
+Skeletal                        |1                               |1                               |1                               |1                               |1                               |
+GPU Skinning                    |1                               |                                |1                               |1                               |                                |
+IK                              |0.2:Only humanoid               |0                               |1                               |1                               |1                               |
+Humanoid-aware                  |1                               |0                               |0                               |0                               |0                               |
+State machines:14               |1                               |1                               |0                               |1                               |0                               |
+Blend Trees                     |1                               |1                               |0                               |1                               |0                               |
+Linear Blending                 |1                               |1                               |1                               |1                               |1                               |
+Radial Blending                 |1                               |0                               |0                               |0                               |0                               |AKA Freeform
+Blend Shapes                    |1                               |1                               |1                               |0                               |1                               |
+Bone Groups Blending            |0.2:Only humanoid               |0                               |0                               |0                               |0                               |E.g. Upper body/lower body
+Generic Tweening                |0                               |0                               |1:Animation Properties          |0                               |1                               |
+Anim Events                     |1                               |1                               |1                               |1                               |1                               |
+Anim Curves (Values)            |1                               |0                               |0                               |0                               |0                               |Sample values from custom curves attached to animations (E.g. character height at a given pose for collision)
+Root Bone Movement              |1                               |0                               |0                               |1                               |1                               |
+
+3D Physics                      |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+-|-|-|-|-|-|-
+Engine                          |0.8:PhysX (very limited)        |0.8:Own/Bullet                  |0.8:Bullet                      |1:PhysX / Bullet(WIP)           |1:PhysX                         |PhysX is objectively the best physics engine to date both in sim quality and performance (check PEEL), but it's proprietary. Unity is very limited in the sense that you can't access most of the API and a ton of stuff is neglected for example articulations and origin shifting.
+Speculative CD                  |1                               |0/0(WIP)                        |1                               |1                               |1                               |
+Multi-threaded                  |0                               |0                               |0                               |1                               |1                               |
+Async Scene                     |0                               |0                               |0                               |0                               |0                               |
+Cloth                           |1                               |                                |                                |                                |                                |
+Particle collision              |1                               |                                |                                |                                |                                |
+Joints                          |1                               |                                |                                |                                |                                |
+Effect Zones                    |0                               |                                |                                |                                |                                |
+Ragdoll Configurator            |1                               |                                |                                |                                |                                |
 
 AI                              |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
@@ -287,20 +259,47 @@ Runtime Graph Generation        |1 (WIP)                         |0             
 State Machine                   |0                               |0                               |0                               |0                               |0                               |
 Crowd Simulation                |                                |0                               |1                               |                                |                                |
 
-Asset Pipeline                  |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
--|-|-|-|-|-|-
-FBX                             |1:AD SDK                        |0.5:Bad support                 |0.5:Bad support                 |0.9:OpenFBX                     |1:AD SDK                        |
-GLTF                            |                                |                                |                                |                                |                                |
-PSD                             |                                |                                |                                |                                |                                |
-Images                          |                                |                                |                                |                                |                                |
-Fonts                           |                                |                                |                                |                                |                                |
-Meshes                          |                                |                                |                                |                                |                                |
-
 UI                              |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
 In-Game Restrained              |1                               |1                               |1                               |1 (Turbobadger)                 |1                               |
 In-Game Immediate               |1                               |0                               |0                               |1 (Dear Imgui)                  |0                               |
 
+Terrain System                  |1                               |0:WIP                           |1                               |1                               |1                               |
+-|-|-|-|-|-|-
+Geomipmapping                   |1                               |0                               |1                               |1                               |1                               |
+Foliage system                  |1                               |0                               |0                               |1                               |0                               |
+Tileable Terrains               |1                               |0                               |0                               |0                               |0                               |(adjacent awareness)
+Terrain splines                 |0                               |0                               |0                               |0                               |0                               |roads/rivers/etc
+Voxel-based (/alternatively)    |0                               |0                               |0                               |0                               |0                               |
+
+2D                              |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+-|-|-|-|-|-|-
+2D support                      |1                               |1                               |1                               |0                               |0:Roadmap                       |
+Sprites                         |1                               |1                               |1                               |0                               |0                               |
+Sprite packing                  |1                               |                                |                                |                                |                                |Not necessarily has UI (see editor)
+Physics                         |1:Box2D                         |1:Own                           |1:Box2D                         |0                               |0                               |
+Audio                           |1                               |1                               |1                               |0                               |1                               |
+Particles                       |0                               |1                               |1                               |0                               |0                               |3D particles are usable for 2D in most cases
+Pixel Perfect Rendering         |0                               |0                               |0                               |0                               |0                               |
+Pixel Units                     |0                               |1                               |0                               |0                               |0                               |
+2D Skeletal Anim                |1                               |1                               |0                               |0                               |0                               |
+Sorting Groups                           |                                |                                |                                |                                |                                |
+9-slice textures                           |                                |                                |                                |                                |                                |
+Sprite Masks                    |1                                |                                |                                |                                |                                |
+Tilemaps                        |                                |                                |                                |                                |                                |
+Tilemap Editor                  |                                |                                |                                |                                |                                |
+
+Debugging                       |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+-|-|-|-|-|-|-
+Debug Drawing                   |1                               |1                               |1                               |1                               |1                               |Remove this?
+Frame Debugging                 |1                               |0                               |0                               |0                               |0                               |
+
+Network                         |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
+-|-|-|-|-|-|-
+Scene Replication               |1                               |1                               |1                               |0                               |0                               |
+RPC                             |                                |                                |                                |                                |                                |
+HTTP requests                   |                                |                                |1                               |                                |                                |irrelevant?
+Voice over network              |0                               |0                               |0                               |0                               |0                               |
 
 Others                          |Unityᶠʳᵉᵉ                       |Godot                           |Urho                            |Lumix                           |Banshee                         |info
 -|-|-|-|-|-|-
