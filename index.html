@@ -6,6 +6,12 @@
 
 <style>
 
+button {
+    background: linear-gradient(to bottom, #fff, #ddd);
+    border: 2px solid #eee;
+    padding: 0.3em 0.8em;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -125,7 +131,11 @@ div.ntooltip > info {
 <h1>some</h1>
 <p>thing</p>
 
-Beware: early WIP!
+<span>Beware: early WIP!</span><br/>
+
+<button class="toggle">Toggle All</button>
+<button id="1" class="toggle">Show All</button>
+<button id="0" class="toggle">Hide All</button>
 
 <div id="table_data">Loading data... (requires javascript)</div>
 
@@ -133,19 +143,7 @@ Beware: early WIP!
 <script>
 
 var colors = [ //TODO color lerper
-"f99",
-"fa9",
-"fb9",
-"fc9",
-"fd9",
-"fe9",
-"ff9",
-"ef9",
-"df9",
-"cf9",
-"bf9",
-"af9",
-"9f9"
+"f99","fa9","fb9","fc9","fd9","fe9","ff9","ef9","df9","cf9","bf9","af9","9f9"
 ];
 
 function colorFromWeight(weight) {
@@ -335,7 +333,16 @@ $(document).ready(function () {
 });
 
 $(document).on('click', ".section_header", function () {
-    $(this).nextUntil('.section_header').find('div').toggle();
+    $(this).nextUntil('.section_header').fadeToggle(300);
+});
+
+$(".toggle").on("click", function(event) {
+	var id = event.target.id;
+	var boolId = Boolean(Number(id)); //what the actual effing heck! JS is insanity!!!!! :(
+	if (id)
+		$(".section_content").toggle(boolId);
+	else
+		$(".section_content").toggle();
 });
 </script>
 
